@@ -383,7 +383,7 @@ hr {
   font-size: 16px;
   text-align: center;
   transition: all 0.3s ease-in-out;
-  left: 20px;
+  left: 0px;
   right: auto;
   opacity: 0;
   visibility: hidden;
@@ -400,7 +400,7 @@ hr {
   opacity: 0.3 !important;
 }
 .swiper-navigation-next {
-  right: 20px;
+  right: 0px;
   left: auto;
 }
 
@@ -559,16 +559,16 @@ hr {
 }
 
 .section-space-ptb {
-  padding-top: 90px;
-  padding-bottom: 90px;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 .section-space-pt {
-  padding-top: 90px;
+  padding-top: 50px;
 }
 
 .section-space-pb {
-  padding-bottom: 90px;
+  padding-bottom: 50px;
 }
 
 .mt-5 {
@@ -1545,6 +1545,13 @@ hr {
 }
 .hero-slider-image {
   position: relative;
+    height: calc(100vh - 105px);
+    overflow: hidden;
+}
+.hero-slider-image video{
+        display: block;
+    width: 100%;
+    height: auto;
 }
 .hero-slider-image img {
   width: 100%;
@@ -1577,12 +1584,12 @@ hr {
   background-color: #FFFFFF;
 }
 .product-card:hover .product-card-thumb-primary {
-  transform: scale(1.1);
+  transform: scale(1);
 }
 .product-card:hover .product-card-thumb-secondary {
   opacity: 1;
   visibility: visible;
-  transform: scale(1.1);
+  transform: scale(1);
 }
 .product-card:hover .product-card-action-quickview {
   opacity: 1;
@@ -1612,9 +1619,11 @@ hr {
   position: relative;
   display: block;
   overflow: hidden;
+    height: 100%;
 }
 .product-card-thumb-area {
   position: relative;
+    height: 400px;
 }
 .product-card-thumb img {
   aspect-ratio: 1/1;
@@ -1929,13 +1938,15 @@ hr {
   position: relative;
   overflow: hidden;
   display: block;
+    height: 100%;
 }
 .banner-card-image img {
   width: 100%;
-  height: auto;
+  height: 100%;
   transition: all 0.3s ease-in-out;
   -o-object-fit: cover;
      object-fit: cover;
+    object-position: center;
 }
 .banner-card-content-bottom {
   bottom: 50px;
@@ -1975,6 +1986,8 @@ hr {
 .banner-card-animation-one {
   display: block;
   transition: all 0.3s ease-in-out;
+        height: 400px;
+    overflow: hidden;
 }
 .banner-card-animation-one img {
   transform: scale(1);
