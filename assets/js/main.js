@@ -19,6 +19,22 @@ const headerObServer = new IntersectionObserver(stickyNav, {
 headerObServer.observe(header);
 
 
+document.addEventListener("DOMContentLoaded", function () {
+    const swiper = new Swiper(".product-row-2-slider-active", {
+        slidesPerView: 3, // Number of slides visible at a time
+        spaceBetween: 30, // Space between slides
+        navigation: {
+            nextEl: ".swiper-navigation-next",
+            prevEl: ".swiper-navigation-prev",
+        },
+        loop: true, // Auto loop
+        autoplay: {
+            delay: 2000, // Time between slides (2 seconds )
+        },
+    });
+});
+
+
 // Header Top bar Toggle 
 const topbarCloseBtn = document.querySelector(".topbar-close-btn")
 const topbarActive = document.querySelector(".notification-bar-area")

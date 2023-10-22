@@ -104,6 +104,27 @@ h6 {
   color: #333333;
 }
 
+.fixed-bg{
+  /* background image no repeat cover */
+  background-image: url(../images/bg/1.avif);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  
+  position: relative;
+
+}
+.fixed-bg::before{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.5);
+}
+
+
 .h1,
 .h2,
 .h3,
@@ -739,8 +760,8 @@ hr {
   padding: 10px 0;
 }
 .logo a img {
-  max-width: 110px;
-  width: 100%;
+  width: 500px;
+  height: 90px;
 }
 
 /*--------------------------
@@ -1718,7 +1739,12 @@ hr {
 .product-card-title {
   margin-bottom: 5px;
   font-size: 16px;
+  color: white;
 }
+.product-card-title:hover {
+  color: #000000;
+}
+
 .product-card-price {
   font-size: 16px;
   transition: all 0.3s ease-in-out;
