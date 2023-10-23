@@ -298,6 +298,49 @@ var swiperProductSlider = new Swiper(".product-slider-active", {
         },
     },
 });
+
+
+
+var swiperProductSlider = new Swiper(".product-taps-active", {
+    spaceBetween: 15,
+    slidesPerView: 1,
+    navigation: {
+        nextEl: ".product-swiper-button-next",
+        prevEl: ".product-swiper-button-prev",
+    },
+    pagination: {
+        el: ".product-swiper-pagination",
+        clickable: true,
+    },
+    breakpoints: {
+        1200: {
+            slidesPerView: 4,
+            spaceBetween: 15,
+        },
+        1024: {
+            slidesPerView: 3,
+            spaceBetween: 15,
+        },
+        768: {
+            slidesPerView: 2,
+            spaceBetween: 15,
+        },
+        576: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+        },
+        400: {
+            slidesPerView: 2,
+            spaceBetween: 15,
+        },
+        320: {
+            slidesPerView: 1,
+            spaceBetween: 15,
+        },
+    },
+});
+
+
 // Product Row Slider Js
 var swiperProductSlider = new Swiper(".product-slider-two-active", {
     spaceBetween: 30,

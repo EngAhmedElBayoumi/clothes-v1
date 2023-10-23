@@ -1,23 +1,24 @@
 .drawing-area {
-    position: absolute;
-    top: 60px;
-    left: 122px;
+position: absolute;
+    top: 85px;
+    left: 25%;
     z-index: 10;
     width: 200px;
-    height: 400px;
-    border: 1px solid #ccc;
+    height: 370px;
+    border: 1px dashed #068b8e;
   }
   
   .canvas-container {
-    width: 200px;
-    height: 400px;
+    width: 100% !important;
+    height: 100% !important;
     position: relative;
     user-select: none;
   }
   
   #tshirt-div {
-    width: 452px;
-    height: 548px;
+width: 80%;
+    margin: auto;
+    height: auto;
     position: relative;
     background-color: #fff;
   }
@@ -26,9 +27,545 @@
     position: absolute;
     width: 200px;
     height: 400px;
+          height: 100% !important;
     left: 0px;
     top: 0px;
     user-select: none;
     cursor: default;
   }
   
+#tshirt-canvas{
+    width: 100% !important;
+        height: 100% !important;
+}
+.upper-canvas {
+        width: 100% !important;
+        height: 100% !important;
+}
+
+
+.TeshertDive{
+    
+}
+.TeshertDive .ImageTeshert{
+    width: 100%;
+}
+
+.CustomTapsDesign{
+    
+}
+.CustomTapsDesign .CustomTapsbody{
+    
+}
+.CustomTapsDesign .CustomTapsbody .TapsHeaders{
+    
+}
+.CustomTapsDesign .CustomTapsbody .TapsHeaders ul{
+    
+}
+.CustomTapsDesign .CustomTapsbody .TapsHeaders ul li{
+    display: flex;
+    align-items: center;
+    height: 90px;
+}
+.CustomTapsDesign .CustomTapsbody .TapsHeaders ul li .nav-link{
+    display: block;
+    height: 100%;
+    border-radius: 0;
+    border: 1px solid #068b8e;
+    display: flex;
+    align-items: center;
+    border-right: 0;
+    justify-content: center;
+}
+.CustomTapsDesign .CustomTapsbody .TapsHeaders ul li .nav-link img{
+        display: block;
+    width: 20px;
+    height: auto;
+    margin: auto;
+    filter: grayscale(0);
+    transition: all 0s ease-in-out;
+}
+.CustomTapsDesign .CustomTapsbody .TapsHeaders ul li .nav-link span{
+        color: #212121;
+font-size: 12px;
+    margin-top: 5px;
+}
+.CustomTapsDesign .CustomTapsbody .TapsHeaders ul li .active{
+    background: #068b8e;
+}
+.CustomTapsDesign .CustomTapsbody .TapsHeaders ul li .active img{
+ filter: grayscale(100) brightness(100);
+}
+.CustomTapsDesign .CustomTapsbody .TapsHeaders ul li .active span{
+        color: #fff;
+}
+
+.CustomTapsDesign .CustomTapsbody .TapsHeaders ul li .CustomTapStyle{
+     background: #edb003;
+     border: 1px solid #edb003;
+}
+.CustomTapsDesign .CustomTapsbody .TapsHeaders ul li .CustomTapStyle img{
+ filter: grayscale(100) brightness(100);
+}
+.CustomTapsDesign .CustomTapsbody .TapsHeaders ul li .CustomTapStyle span{
+        color: #fff;
+}
+
+
+.CustomTapsDesign .CustomTapsbody .TapsContentBody{
+    
+}
+.CustomTapsDesign .CustomTapsbody .TapsContentBody .tab-content{
+
+}
+
+.CustomTapsDesign .CustomTapsbody .TapsContentBody .tab-pane{
+    
+}
+.CustomTapsDesign .CustomTapsbody .TapsContentBody .tab-pane.active{
+    
+}
+.CustomTapsDesign .CustomTapsbody .TapsContentBody .tab-pane .BodyTaps{
+    
+}
+.CustomTapsDesign .ProductTap{
+    
+}
+
+.CustomTapsDesign .ProductTap .accordion{
+    
+}
+.CustomTapsDesign .ProductTap .accordion .accordion-item{
+        border: 1px solid #068b8e;
+        margin-bottom: 15px;
+}
+.CustomTapsDesign .ProductTap .accordion .accordion-item .accordion-header{
+    position: relative;
+}
+.CustomTapsDesign .ProductTap .accordion .accordion-item .accordion-header .accordion-button{
+    
+}
+.CustomTapsDesign .ProductTap .accordion .accordion-item .accordion-header .accordion-button{
+            background: #068b8e;
+    color: #fff;
+    font-size: 15px;
+    padding: 12px 15px;
+        outline: 0;
+    box-shadow: none;
+}
+
+.CustomTapsDesign .ProductTap .accordion .accordion-item .accordion-header .BTNCustom{
+    position: absolute;
+    top: 7px;
+    right: 50px;
+    background: #edb003;
+    height: 30px;
+    font-size: 14px;
+    line-height: 30px;
+    padding: 0 15px;
+    border-radius: 25px;
+    color: #fff;
+    z-index: 9;
+}
+.CustomTapsDesign .ProductTap .accordion .accordion-item .accordion-header .accordion-button:not(.collapsed){
+        background: #068b8e;
+    color: #fff;
+    font-size: 15px;
+    padding: 12px 15px;
+}
+.CustomTapsDesign .ProductTap .accordion .accordion-item .accordion-header .accordion-button:not(.collapsed):after{
+        background-image: url(../images/NewImages/icons/uparrow.png);
+        filter: brightness(100);
+}
+.CustomTapsDesign .ProductTap .accordion .accordion-item .accordion-header .accordion-button:after{
+        background-image: url(../images/NewImages/icons/uparrow.png);
+        filter: brightness(100);
+}
+.CustomTapsDesign .ProductTap .accordion .accordion-item .accordion-collapse{
+    
+}
+.CustomTapsDesign .ProductTap .accordion .accordion-item .accordion-collapse .accordion-body{
+    
+}
+.CustomTapsDesign .ProductTap .accordion-body .ProductItems{
+    
+}
+.CustomTapsDesign .ProductTap .accordion-body .ProductItems .product-taps-active{
+        cursor: grab;
+}
+.CustomTapsDesign .ProductTap .accordion-body .ProductItems .ProItem{
+        cursor: pointer;
+}
+.CustomTapsDesign .ProductTap .accordion-body .ProductItems .ProItem.active image{
+    
+}
+.CustomTapsDesign .ProductTap .accordion-body .ProductItems .ProItem .Image{
+    display: flex;
+    height: 110px;
+    border: 1px solid #068b8e;
+    width: 100%;
+    align-items: center;
+}
+.CustomTapsDesign .ProductTap .accordion-body .ProductItems .ProItem.active .Image{
+        border: 2px solid #edb003;
+}
+.CustomTapsDesign .ProductTap .accordion-body .ProductItems .ProItem .Image img{
+    
+}
+
+.CustomTapsDesign .ProductTap .accordion-body .ProductColor{
+
+}
+.CustomTapsDesign .ProductTap .accordion-body .ProductColor h2{
+        font-size: 15px;
+    color: #068b8e;
+    margin-bottom: 15px;
+}
+.CustomTapsDesign .ProductTap .accordion-body .ProductColor .colorItem{
+        display: inline-block;
+    width: 25px;
+    height: 25px;
+    text-align: center;
+    line-height: 25px;
+    box-shadow: 0 0 2px #eee;
+    position: relative;
+}
+.CustomTapsDesign .ProductTap .accordion-body .ProductColor .colorItem .IconCheck{
+    font-size: 25px;
+    color: #fff;
+    display: none;
+}
+.CustomTapsDesign .ProductTap .accordion-body .ProductColor .colorItem .ColorInputName{
+    position: absolute;
+    top: 0;
+    opacity: 0;
+}
+.CustomTapsDesign .ProductTap .accordion-body .ProductColor .colorItem.active{
+        position: relative;
+    top: -2px;
+}
+.CustomTapsDesign .ProductTap .accordion-body .ProductColor .colorItem.active .IconCheck{
+    display: block;
+}
+.CustomTapsDesign .ProductTap .accordion-body .ProductColor .SizeBoxs{
+    padding: 0 50px;
+    margin-bottom: 30px;
+}
+.CustomTapsDesign .ProductTap .accordion-body .ProductColor .SizeBoxs .SizeItem{
+    text-align: center;
+    margin-bottom: 20px;
+}
+.CustomTapsDesign .ProductTap .accordion-body .ProductColor .SizeBoxs .SizeItem p{
+    margin: 0;
+    font-size: 20px;
+    color: #212121;
+    font-weight: 400;
+}
+.CustomTapsDesign .ProductTap .accordion-body .ProductColor .SizeBoxs .SizeItem .InputNumber{
+        display: block;
+    width: 50%;
+    margin: auto;
+    border: 1px solid #068b8e;
+    border-radius: 0;
+    height: 35px;
+    line-height: 35px;
+    color: #212121;
+    text-align: center;
+    font-size: 18px;
+}
+.CustomTapsDesign .ProductTap .accordion-body .ProductColor .SizeBoxs .SizeItem .InputNumber:focus{
+        border: 1px solid #068b8e;
+    color: #fff;
+    background: #068b8e;
+}
+
+
+
+.CustomTapsDesign .AddDesignTap{
+    
+}
+.CustomTapsDesign .AddDesignTap .Title {
+  
+    background: #068b8e;
+padding: 5px 10px;
+    padding-top: 7px;
+    text-align: center;
+
+}
+.CustomTapsDesign .AddDesignTap .Title h2{
+      margin: 0;
+     color: #fff;
+    font-size: 15px;
+        text-transform: uppercase;
+}
+.CustomTapsDesign .AddDesignTap .Title span{
+    display: block;
+        color: #fff;
+    font-size: 12px;
+    line-height: 15px;
+    font-weight: 300;
+}
+.CustomTapsDesign .AddDesignTap .AddDesignBodyTap{
+    border: 1px solid #068b8e;
+        padding: 15px;
+}
+
+
+.CustomTapsDesign .AddDesignTap .AddDesignBodyTap .accordion{
+    
+}
+.CustomTapsDesign .AddDesignTap .AddDesignBodyTap .accordion .accordion-item{
+    margin-bottom: 15px;
+}
+.CustomTapsDesign .AddDesignTap .AddDesignBodyTap .accordion .accordion-item .accordion-header{
+    
+}
+.CustomTapsDesign .AddDesignTap .AddDesignBodyTap .accordion .accordion-item .accordion-header .accordion-button{
+        outline: 0;
+    background: #fff;
+    box-shadow: none;
+        padding: 5px 15px;
+    border-bottom: 1px solid #068b8e;
+    
+}
+.CustomTapsDesign .AddDesignTap .AddDesignBodyTap .accordion .accordion-item:last-child .accordion-header .accordion-button{
+        outline: 0;
+    background: #fff;
+    box-shadow: none;
+        padding: 5px 15px;
+border-bottom: 0px solid #068b8e;
+    
+}
+
+.CustomTapsDesign .AddDesignTap .AddDesignBodyTap .accordion .accordion-item .accordion-header .accordion-button h3{
+    
+}
+.CustomTapsDesign .AddDesignTap .AddDesignBodyTap .accordion .accordion-item .accordion-header .accordion-button h3 span{
+    display: block;
+        margin: 0;
+}
+
+.CustomTapsDesign .AddDesignTap .AddDesignBodyTap .accordion .accordion-item .accordion-header .accordion-button h3 .UpperTitle{
+        font-size: 15px;
+    color: #068b8e;
+
+}
+.CustomTapsDesign .AddDesignTap .AddDesignBodyTap .accordion .accordion-item .accordion-header .accordion-button h3 .DowenTitle{
+        font-size: 15px;
+    margin-top: 5px;
+    color: #212121;
+}
+.CustomTapsDesign .AddDesignTap .AddDesignBodyTap .accordion .accordion-item .accordion-button:not(.collapsed){
+    background: #fff;
+}
+
+.CustomTapsDesign .AddDesignTap .AddDesignBodyTap .accordion .accordion-item .accordion-body{
+     padding: 0;
+}
+.CustomTapsDesign .AddDesignTap .AddDesignBodyTap .accordion .accordion-item .accordion-body .AcordyBodyInputs{
+        padding: 15px;
+    border: 1px solid #068b8e;
+ 
+}
+
+.CustomTapsDesign .AddDesignTap .AddDesignBodyTap .accordion .accordion-item .accordion-body .AcordyBodyInputs .form_group{
+        margin-bottom: 30px;
+}
+.CustomTapsDesign .AddDesignTap .AddDesignBodyTap .accordion .accordion-item .accordion-body .AcordyBodyInputs .form_group:last-child{
+    margin-bottom: 0;
+}
+.CustomTapsDesign .AddDesignTap .AddDesignBodyTap .accordion .accordion-item .accordion-body .AcordyBodyInputs .form_group label{
+        color: #068b8e;
+    font-size: 15px;
+}
+.CustomTapsDesign .AddDesignTap .AddDesignBodyTap .accordion .accordion-item .accordion-body .AcordyBodyInputs .form_group .form-control{
+    border-radius: 0;
+    box-shadow: none;
+    outline: 0;
+}
+
+.CustomTapsDesign .AcordyBodyInputs .ClipArts{
+    
+}
+.CustomTapsDesign .AcordyBodyInputs .ClipArts .otherrow{
+        margin-left: -5px;
+    margin-right: -5px;
+}
+.CustomTapsDesign .AcordyBodyInputs .ClipArts .othercol{
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.CustomTapsDesign .AcordyBodyInputs .ClipArts .ArtItem{
+        cursor: pointer;
+    margin-bottom: 10px;
+}
+.CustomTapsDesign .AcordyBodyInputs .ClipArts .ArtItem .image{
+        display: flex;
+    height: auto;
+    border: 1px solid #068b8e;
+    width: 100%;
+    align-items: center;
+}
+.CustomTapsDesign .AcordyBodyInputs .ClipArts .ArtItem .image img{
+    display: block;
+    height: 100%;
+    width: auto;
+}
+.CustomTapsDesign .AcordyBodyInputs .ClipArts .ArtItem.active .image {
+    border: 2px solid #edb003;
+}
+.CustomTapsDesign  .CollectionPrint{
+    display: block;
+    width: 100%;
+    height: 45px;
+    border: 1px solid #edb003;
+    background: #edb003;
+    color: #fff;
+    font-size: 15px;
+}
+
+
+.CustomTapsDesign .AddTextTap{
+    
+}
+.CustomTapsDesign .AddTextTap .Title {
+  
+    background: #068b8e;
+padding: 13px 10px;
+
+    text-align: center;
+
+}
+.CustomTapsDesign .AddTextTap .Title h2{
+      margin: 0;
+     color: #fff;
+    font-size: 15px;
+        text-transform: uppercase;
+}
+.CustomTapsDesign .AddTextTap .Title span{
+    display: block;
+        color: #fff;
+    font-size: 12px;
+    line-height: 15px;
+    font-weight: 300;
+}
+.CustomTapsDesign .AddTextTap .AddTextBodyTap{
+    border: 1px solid #068b8e;
+        padding: 15px;
+}
+
+.CustomTapsDesign .AddTextBodyTap .TextOptions{
+    
+}
+.CustomTapsDesign .AddTextBodyTap .TextOptions .elementItem{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+        width: 80%;
+    margin: 15px auto;
+}
+.CustomTapsDesign .AddTextBodyTap .TextOptions .elementItem .IconTitle{
+        display: block;
+    width: 100px;
+    text-align: center;
+}
+.CustomTapsDesign .AddTextBodyTap .TextOptions .elementItem .IconTitle img{
+        display: block;
+    width: 20px;
+    height: 20px;
+    margin: auto;
+    margin-bottom: 5px;
+}
+.CustomTapsDesign .AddTextBodyTap .TextOptions .elementItem .IconTitle span{
+    display: block;
+    font-size: 13px;
+    color: #212121;
+    text-transform: uppercase;
+}
+.CustomTapsDesign .AddTextBodyTap .TextOptions .elementItem .InputElement{
+    display: block;
+    width: calc(100% - 100px);
+}
+.CustomTapsDesign .AddTextBodyTap .TextOptions .elementItem .InputElement .SelectInput{
+    display: block;
+    width: 100%;
+    height: 35px;
+    border-radius: 0;
+    background: #51aeb0;
+    color: #fff;
+    border: 1px solid #51aeb0;
+    padding: 0 10px;
+}
+
+.CustomTapsDesign .AddTextBodyTap .TextOptions .DowenSection{
+    display: block;
+    width: 80%;
+    margin: auto;
+}
+.CustomTapsDesign .AddTextBodyTap .TextOptions .elementItem_Solo{
+    display: inline-block;
+    width: calc(100% / 3 - 5px);
+    margin: 15px auto;
+    cursor: pointer;
+}
+.CustomTapsDesign .AddTextBodyTap .TextOptions .elementItem_Solo .IconTitle{
+        display: block;
+    width: 100px;
+    text-align: center;
+}
+.CustomTapsDesign .AddTextBodyTap .TextOptions .elementItem_Solo .IconTitle img{
+        display: block;
+    width: 20px;
+    height: 20px;
+    margin: auto;
+    margin-bottom: 5px;
+}
+.CustomTapsDesign .AddTextBodyTap .TextOptions .elementItem_Solo .IconTitle span{
+    display: block;
+    font-size: 13px;
+    color: #212121;
+    text-transform: uppercase;
+}
+
+.CustomTapsDesign .AddTextBodyTap .TextOptions .TextAreaBox{
+    
+}
+.CustomTapsDesign .AddTextBodyTap .TextOptions .TextAreaBox textarea{
+        display: block;
+    width: 100%;
+    border-radius: 10px;
+    padding: 10px;
+    min-height: 110px;
+    border: 2px solid #068b8e;
+    resize: vertical;
+}
+.CustomTapsDesign .AddTextBodyTap .TextOptions .AddBUTTON{
+    
+}
+.CustomTapsDesign .AddTextBodyTap .TextOptions .AddBUTTON .AddBTN{
+    display: block;
+    width: 100px;
+    height: 40px;
+    line-height: 38px;
+    padding: 0;
+    border: 1px solid #edb003;
+    color: #fff;
+    font-size: 15px;
+    border-radius: 5px;
+    background: #edb003;
+    margin: 15px auto;
+    text-transform: uppercase;
+}
+
+
+
+
+
+
+
+
+
+
+
+

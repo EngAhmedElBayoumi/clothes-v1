@@ -24,7 +24,9 @@
         rel="stylesheet">
 
     <!-- Vendor CSS (Bootstrap & Icon Font) -->
+    <link href="assets/libs/ion-rangeslider/css/ion.rangeSlider.min.css" rel="stylesheet" type="text/css"/>
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/icons.min.css">
 
     <!-- Plugins CSS (All Plugins Files) -->
     <link rel="stylesheet" href="assets/css/roadthemes-icon.css">
@@ -33,7 +35,7 @@
 
     <!-- Style CSS -->
     <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/css/dark-theme.css">
+
 
 </head>
 
@@ -184,19 +186,15 @@
                 <main id="main" class="site-main" role="main">
 
 
-                    <article id="post-12" class="post-12 page type-page status-publish hentry">
-                        <header class="entry-header">
-                            <h1 class="entry-title">design your own</h1>
-                        </header>
-                    </article>
+                    
                     <div class="container">
 
 
                         <div class="row">
-                            <div class="col-sm-12 col-md-8">
+                            <div class="col-sm-6 col-md-6">
                                 <!-- Create the container of the tool -->
-                                <div id="tshirt-div">
-                                    <img id="tshirt-backgroundpicture"
+                                <div class="TeshertDive" id="tshirt-div">
+                                    <img class="ImageTeshert" id="tshirt-backgroundpicture"
                                         src="https://ourcodeworld.com/public-media/gallery/gallery-5d5afd3f1c7d6.png" />
                                     <div id="drawingArea" class="drawing-area">
                                         <div class="canvas-container">
@@ -205,7 +203,801 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-4">
+                            <div class="col-6">
+                                
+                                <div class="CustomTapsDesign">
+                                    <div class="CustomTapsbody">
+                                        <div class="TapsHeaders">
+                                            <ul class="nav nav-pills nav-justified" role="tablist">
+                                                <li class="nav-item waves-effect waves-light">
+                                                    <a class="nav-link active" data-bs-toggle="tab" href="#Product" role="tab">
+                                                        <div class="forflex">
+                                                            <img src="assets/images/NewImages/icons/t-shirt.png">
+                                                            <span class="d-none d-sm-block">Product</span>
+                                                        </div> 
+                                                    </a>
+                                                </li>
+                                                <li class="nav-item waves-effect waves-light">
+                                                    <a class="nav-link" data-bs-toggle="tab" href="#Add_Design" role="tab">
+                                                        <div class="forflex">
+                                                            <img src="assets/images/NewImages/icons/camera.png">
+                                                            <span class="d-none d-sm-block">Add Design</span>
+                                                        </div> 
+                                                    </a>
+                                                </li>
+                                                <li class="nav-item waves-effect waves-light">
+                                                    <a class="nav-link" data-bs-toggle="tab" href="#Add_Text" role="tab">
+                                                        <div class="forflex">
+                                                            <img src="assets/images/NewImages/icons/text.png">
+                                                            <span class="d-none d-sm-block">Add Text</span>
+                                                        </div> 
+                                                    </a>
+                                                </li>
+                                                <li class="nav-item waves-effect waves-light">
+                                                    <a class="nav-link" data-bs-toggle="tab" href="#Save_Load" role="tab">
+                                                        <div class="forflex">
+                                                            <img src="assets/images/NewImages/icons/download.png">
+                                                            <span class="d-none d-sm-block">Save/Load</span>
+                                                        </div>    
+                                                    </a>
+                                                </li>
+                                                <li class="nav-item waves-effect waves-light">
+                                                    <a class="nav-link CustomTapStyle" data-bs-toggle="tab" href="#Quote_Buy" role="tab">
+                                                        <div class="forflex">
+                                                            <img src="assets/images/NewImages/icons/grocery-store.png">
+                                                            <span class="d-none d-sm-block">Quote/Buy</span>
+                                                        </div>    
+                                                    </a>
+                                                </li>
+                                            </ul>
+        
+                                        </div>
+                                        <div class="TapsContentBody">
+                                             <div class="tab-content pt-3 text-muted">
+                                                <div class="tab-pane active" id="Product" role="tabpanel">
+                                                    <div class="BodyTaps">
+                                                        <div class="ProductTap">
+                                                            <div class="accordion accordion-flush" id="accordionProduct">
+                                                                <div class="accordion-item">
+                                                                    <h2 class="accordion-header" id="flush-heading_1">
+                                                                        <button class="accordion-button fw-medium" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse_1" aria-expanded="true" aria-controls="flush-collapse_1">
+                                                                        Choose Product 
+                                                                        </button>
+                                                                        <a class="BTNCustom" href="#">All Product</a>
+                                                                    </h2>
+                                                                    <div id="flush-collapse_1" class="accordion-collapse collapse show" aria-labelledby="flush-heading_1" data-bs-parent="#accordionProduct_1">
+                                                                        <div class="accordion-body text-muted">
+                                                                            <div class="ProductItems">
+                                                                                
+                                                                                <div class="swiper product-taps-active position-relative">
+                                                                                    <div class="swiper-wrapper">
+                                                                                        <div class="swiper-slide">
+                                                                                            <div class="ProItem active">
+                                                                                                <div class="Image">
+                                                                                                    <img src="assets/images/NewImages/icons/tsheert.jpg">
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                        <div class="swiper-slide">
+                                                                                            <div class="ProItem">
+                                                                                                <div class="Image">
+                                                                                                    <img src="assets/images/NewImages/icons/cap.png">
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                        <div class="swiper-slide">
+                                                                                            <div class="ProItem">
+                                                                                                <div class="Image">
+                                                                                                    <img src="assets/images/NewImages/icons/tsheert.jpg">
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                        <div class="swiper-slide">
+                                                                                            <div class="ProItem">
+                                                                                                <div class="Image">
+                                                                                                    <img src="assets/images/NewImages/icons/cap.png">
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                        <div class="swiper-slide">
+                                                                                            <div class="ProItem">
+                                                                                                <div class="Image">
+                                                                                                    <img src="assets/images/NewImages/icons/tsheert.jpg">
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                        <div class="swiper-slide">
+                                                                                            <div class="ProItem">
+                                                                                                <div class="Image">
+                                                                                                    <img src="assets/images/NewImages/icons/cap.png">
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                        <div class="swiper-slide">
+                                                                                            <div class="ProItem">
+                                                                                                <div class="Image">
+                                                                                                    <img src="assets/images/NewImages/icons/tsheert.jpg">
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                            </div>
+                                                                        
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="accordion-item">
+                                                                    <h2 class="accordion-header" id="flush-heading_2">
+                                                                        <button class="accordion-button fw-medium" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse_2" aria-expanded="true" aria-controls="flush-collapse_2">
+                                                                        Product Options
+                                                                        </button>
+                                                                    </h2>
+                                                                    <div id="flush-collapse_2" class="accordion-collapse collapse show" aria-labelledby="flush-heading_2" data-bs-parent="#accordionProduct_2">
+                                                                        <div class="accordion-body text-muted">
+                                                                            <div class="ProductColor">
+                                                                                <h2>Choose Product Color</h2>
+                                                                                <div style="padding: 15px">
+                                                                                    <label for="color_1" class="colorItem active" style="background: #fff">
+                                                                                    <span class="IconCheck bx bx-check" style="color: #000"></span>
+                                                                                    <input checked id="color_1" class="ColorInputName" type="radio" name="colorName" value="#f00">
+                                                                                </label>
+                                                                                <label for="color_2" class="colorItem" style="background: #cacaca">
+                                                                                    <span class="IconCheck bx bx-check"></span>
+                                                                                    <input id="color_2" class="ColorInputName" type="radio" name="colorName" value="#f00">
+                                                                                </label>
+                                                                                <label for="color_3" class="colorItem" style="background: #b0b0b0">
+                                                                                    <span class="IconCheck bx bx-check" ></span>
+                                                                                    <input id="color_3" class="ColorInputName" type="radio" name="colorName" value="#f0f">
+                                                                                </label>
+                                                                                <label for="color_4" class="colorItem" style="background: #00f">
+                                                                                    <span class="IconCheck bx bx-check"></span>
+                                                                                    <input id="color_4" class="ColorInputName" type="radio" name="colorName" value="#00f">
+                                                                                </label>
+                                                                                <label for="color_2" class="colorItem" style="background: #f00">
+                                                                                    <span class="IconCheck bx bx-check"></span>
+                                                                                    <input id="color_2" class="ColorInputName" type="radio" name="colorName" value="#f00">
+                                                                                </label>
+                                                                                <label for="color_3" class="colorItem" style="background: #f0f">
+                                                                                    <span class="IconCheck bx bx-check" ></span>
+                                                                                    <input id="color_3" class="ColorInputName" type="radio" name="colorName" value="#f0f">
+                                                                                </label>
+                                                                                <label for="color_4" class="colorItem" style="background: #00f">
+                                                                                    <span class="IconCheck bx bx-check"></span>
+                                                                                    <input id="color_4" class="ColorInputName" type="radio" name="colorName" value="#00f">
+                                                                                </label>
+                                                                                <label for="color_2" class="colorItem" style="background: #f00">
+                                                                                    <span class="IconCheck bx bx-check"></span>
+                                                                                    <input id="color_2" class="ColorInputName" type="radio" name="colorName" value="#f00">
+                                                                                </label>
+                                                                                <label for="color_3" class="colorItem" style="background: #f0f">
+                                                                                    <span class="IconCheck bx bx-check" ></span>
+                                                                                    <input id="color_3" class="ColorInputName" type="radio" name="colorName" value="#f0f">
+                                                                                </label>
+                                                                                <label for="color_4" class="colorItem" style="background: #00f">
+                                                                                    <span class="IconCheck bx bx-check"></span>
+                                                                                    <input id="color_4" class="ColorInputName" type="radio" name="colorName" value="#00f">
+                                                                                </label>
+                                                                                <label for="color_2" class="colorItem" style="background: #f00">
+                                                                                    <span class="IconCheck bx bx-check"></span>
+                                                                                    <input id="color_2" class="ColorInputName" type="radio" name="colorName" value="#f00">
+                                                                                </label>
+                                                                                <label for="color_3" class="colorItem" style="background: #f0f">
+                                                                                    <span class="IconCheck bx bx-check" ></span>
+                                                                                    <input id="color_3" class="ColorInputName" type="radio" name="colorName" value="#f0f">
+                                                                                </label>
+                                                                                <label for="color_4" class="colorItem" style="background: #00f">
+                                                                                    <span class="IconCheck bx bx-check"></span>
+                                                                                    <input id="color_4" class="ColorInputName" type="radio" name="colorName" value="#00f">
+                                                                                </label>
+                                                                                <label for="color_2" class="colorItem" style="background: #f00">
+                                                                                    <span class="IconCheck bx bx-check"></span>
+                                                                                    <input id="color_2" class="ColorInputName" type="radio" name="colorName" value="#f00">
+                                                                                </label>
+                                                                                <label for="color_3" class="colorItem" style="background: #f0f">
+                                                                                    <span class="IconCheck bx bx-check" ></span>
+                                                                                    <input id="color_3" class="ColorInputName" type="radio" name="colorName" value="#f0f">
+                                                                                </label>
+                                                                                <label for="color_4" class="colorItem" style="background: #00f">
+                                                                                    <span class="IconCheck bx bx-check"></span>
+                                                                                    <input id="color_4" class="ColorInputName" type="radio" name="colorName" value="#00f">
+                                                                                </label>
+                                                                                <label for="color_2" class="colorItem" style="background: #f00">
+                                                                                    <span class="IconCheck bx bx-check"></span>
+                                                                                    <input id="color_2" class="ColorInputName" type="radio" name="colorName" value="#f00">
+                                                                                </label>
+                                                                                <label for="color_3" class="colorItem" style="background: #f0f">
+                                                                                    <span class="IconCheck bx bx-check" ></span>
+                                                                                    <input id="color_3" class="ColorInputName" type="radio" name="colorName" value="#f0f">
+                                                                                </label>
+                                                                                <label for="color_4" class="colorItem" style="background: #00f">
+                                                                                    <span class="IconCheck bx bx-check"></span>
+                                                                                    <input id="color_4" class="ColorInputName" type="radio" name="colorName" value="#00f">
+                                                                                </label>
+                                                                                </div>
+                                                                                <h2>Size</h2>
+                                                                                <div class="SizeBoxs">
+                                                                                    <div class="row">
+                                                                                        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6">
+                                                                                            <div class="SizeItem">
+                                                                                                <p>S</p>
+                                                                                                <input name="size_s" value="s" type="number" class="InputNumber">
+                                                                                            </div>
+                                                                                        </div>
+                                                                                        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6">
+                                                                                            <div class="SizeItem">
+                                                                                                <p>M</p>
+                                                                                                <input name="size_M" value="M" type="number" class="InputNumber">
+                                                                                            </div>
+                                                                                        </div>
+                                                                                        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6">
+                                                                                            <div class="SizeItem">
+                                                                                                <p>L</p>
+                                                                                                <input name="size_l" value="L" type="number" class="InputNumber">
+                                                                                            </div>
+                                                                                        </div>
+                                                                                        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6">
+                                                                                            <div class="SizeItem">
+                                                                                                <p>XL</p>
+                                                                                                <input name="size_XL" value="XL" type="number" class="InputNumber">
+                                                                                            </div>
+                                                                                        </div>
+                                                                                        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6">
+                                                                                            <div class="SizeItem">
+                                                                                                <p>XXL</p>
+                                                                                                <input name="size_XXL" value="XXL" type="number" class="InputNumber">
+                                                                                            </div>
+                                                                                        </div>
+                                                                                        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6">
+                                                                                            <div class="SizeItem">
+                                                                                                <p>XXXL</p>
+                                                                                                <input name="size_XXXL" value="XXXL" type="number" class="InputNumber">
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+
+                                                          </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="tab-pane" id="Add_Design" role="tabpanel">
+                                                    <div class="AddDesignTap">
+                                                        <div class="Title">
+                                                            <h2 class="">Add Design</h2>
+                                                            <span>Select an option</span>
+                                                        </div>
+                                                        <div class="AddDesignBodyTap">
+                                                            <div class="accordion accordion-flush" id="accordionAddDesign">
+                                                                
+                                                                <div class="accordion-item">
+                                                                    <h2 class="accordion-header" id="flush-heading_AddDesign_1">
+                                                                        <button class="accordion-button fw-medium collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse_AddDesign_1" aria-expanded="false" aria-controls="flush-collapse_AddDesign_1">
+                                                                            <h3>
+                                                                                <span class="UpperTitle">Clip Art </span>
+                                                                                <span class="DowenTitle">Browse from our templates</span>
+                                                                            </h3>
+                                                                            
+                                                                        </button>
+                                                                    </h2>
+                                                                    <div id="flush-collapse_AddDesign_1" class="accordion-collapse collapse" aria-labelledby="flush-heading_AddDesign_1" data-bs-parent="#accordionAddDesign_1">
+                                                                        <div class="accordion-body text-muted">
+                                                                            <div class="AcordyBodyInputs">
+                                                                                <div class="ClipArts">
+                                                                                    
+                                                                                    
+                                                                                    <div class="row otherrow">
+                                                                                        <div class="col-lg-2 col-md-2 col-sm-6 col-xs-6 othercol">
+                                                                                            <div class="ArtItem">
+                                                                                                <div class="image">
+                                                                                                    <img src="assets/images/categories/dress.jpg">
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                        
+                                                                                        <div class="col-lg-2 col-md-2 col-sm-6 col-xs-6 othercol">
+                                                                                            <div class="ArtItem">
+                                                                                                <div class="image">
+                                                                                                    <img src="assets/images/categories/jackets.jpg">
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                        <div class="col-lg-2 col-md-2 col-sm-6 col-xs-6 othercol">
+                                                                                        <div class="ArtItem">
+                                                                                                <div class="image">
+                                                                                                    <img src="assets/images/categories/jeans.jpg">
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                        <div class="col-lg-2 col-md-2 col-sm-6 col-xs-6 othercol">
+                                                                                        <div class="ArtItem">
+                                                                                                <div class="image">
+                                                                                                    <img src="assets/images/categories/polo-shirt.jpg">
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                        <div class="col-lg-2 col-md-2 col-sm-6 col-xs-6 othercol">
+                                                                                        <div class="ArtItem">
+                                                                                                <div class="image">
+                                                                                                    <img src="assets/images/categories/shirt.jpg">
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                        <div class="col-lg-2 col-md-2 col-sm-6 col-xs-6 othercol">
+                                                                                        <div class="ArtItem">
+                                                                                                <div class="image">
+                                                                                                    <img src="assets/images/categories/t-shirt.jpg">
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                        <div class="col-lg-2 col-md-2 col-sm-6 col-xs-6 othercol">
+                                                                                            <div class="ArtItem">
+                                                                                                <div class="image">
+                                                                                                    <img src="assets/images/categories/dress.jpg">
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                        
+                                                                                        <div class="col-lg-2 col-md-2 col-sm-6 col-xs-6 othercol">
+                                                                                            <div class="ArtItem">
+                                                                                                <div class="image">
+                                                                                                    <img src="assets/images/categories/jackets.jpg">
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                        <div class="col-lg-2 col-md-2 col-sm-6 col-xs-6 othercol">
+                                                                                        <div class="ArtItem">
+                                                                                                <div class="image">
+                                                                                                    <img src="assets/images/categories/jeans.jpg">
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                        <div class="col-lg-2 col-md-2 col-sm-6 col-xs-6 othercol">
+                                                                                        <div class="ArtItem">
+                                                                                                <div class="image">
+                                                                                                    <img src="assets/images/categories/polo-shirt.jpg">
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                        <div class="col-lg-2 col-md-2 col-sm-6 col-xs-6 othercol">
+                                                                                        <div class="ArtItem">
+                                                                                                <div class="image">
+                                                                                                    <img src="assets/images/categories/shirt.jpg">
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                        <div class="col-lg-2 col-md-2 col-sm-6 col-xs-6 othercol">
+                                                                                        <div class="ArtItem">
+                                                                                                <div class="image">
+                                                                                                    <img src="assets/images/categories/t-shirt.jpg">
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                        
+                                                                                        
+                                                                                    </div>
+                                                                                    
+                                                                                    
+                                                                                </div>
+                                                                            </div>
+                                                                        
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                
+                                                                <div class="accordion-item">
+                                                                    <h2 class="accordion-header" id="flush-heading_AddDesign_2">
+                                                                        <button class="accordion-button fw-medium collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse_AddDesign_2" aria-expanded="false" aria-controls="flush-collapse_AddDesign_2">
+                                                                            <h3>
+                                                                                <span class="UpperTitle">Upload Images </span>
+                                                                                <span class="DowenTitle">Upload your own photo or logo</span>
+                                                                            </h3>
+                                                                        </button>
+                                                                    </h2>
+                                                                    <div id="flush-collapse_AddDesign_2" class="accordion-collapse collapse" aria-labelledby="flush-heading_AddDesign_2" data-bs-parent="#accordionAddDesign_2">
+                                                                        <div class="accordion-body text-muted">
+                                                                            <div class="AcordyBodyInputs">
+                                                                                <div class="form_group">
+                                                                                    <label>Upload Image</label>
+                                                                                    <input type="file" class="form-control" placeholder="upload image">
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                
+                                                                <div class="accordion-item">
+                                                                    <h2 class="accordion-header" id="flush-heading_AddDesign_3">
+                                                                        <button class="accordion-button fw-medium collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse_AddDesign_3" aria-expanded="false" aria-controls="flush-collapse_AddDesign_3">
+                                                                            <h3>
+                                                                                <span class="UpperTitle">My Images </span>
+                                                                                <span class="DowenTitle">Choose from your saved images</span>
+                                                                            </h3>
+                                                                        </button>
+                                                                    </h2>
+                                                                    <div id="flush-collapse_AddDesign_3" class="accordion-collapse collapse" aria-labelledby="flush-heading_AddDesign_3" data-bs-parent="#accordionAddDesign_3">
+                                                                        <div class="accordion-body text-muted">
+                                                                            <div class="AcordyBodyInputs">
+                                                                                <div class="ClipArts">
+                                                                                    
+                                                                                    
+                                                                                    <div class="row otherrow">
+                                                                                        <div class="col-lg-2 col-md-2 col-sm-6 col-xs-6 othercol">
+                                                                                            <div class="ArtItem">
+                                                                                                <div class="image">
+                                                                                                    <img src="assets/images/categories/dress.jpg">
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                        
+                                                                                        <div class="col-lg-2 col-md-2 col-sm-6 col-xs-6 othercol">
+                                                                                            <div class="ArtItem">
+                                                                                                <div class="image">
+                                                                                                    <img src="assets/images/categories/jackets.jpg">
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                        <div class="col-lg-2 col-md-2 col-sm-6 col-xs-6 othercol">
+                                                                                        <div class="ArtItem">
+                                                                                                <div class="image">
+                                                                                                    <img src="assets/images/categories/jeans.jpg">
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                        <div class="col-lg-2 col-md-2 col-sm-6 col-xs-6 othercol">
+                                                                                        <div class="ArtItem">
+                                                                                                <div class="image">
+                                                                                                    <img src="assets/images/categories/polo-shirt.jpg">
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                        <div class="col-lg-2 col-md-2 col-sm-6 col-xs-6 othercol">
+                                                                                        <div class="ArtItem">
+                                                                                                <div class="image">
+                                                                                                    <img src="assets/images/categories/shirt.jpg">
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                        <div class="col-lg-2 col-md-2 col-sm-6 col-xs-6 othercol">
+                                                                                        <div class="ArtItem">
+                                                                                                <div class="image">
+                                                                                                    <img src="assets/images/categories/t-shirt.jpg">
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                        <div class="col-lg-2 col-md-2 col-sm-6 col-xs-6 othercol">
+                                                                                            <div class="ArtItem">
+                                                                                                <div class="image">
+                                                                                                    <img src="assets/images/categories/dress.jpg">
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                        
+                                                                                        <div class="col-lg-2 col-md-2 col-sm-6 col-xs-6 othercol">
+                                                                                            <div class="ArtItem">
+                                                                                                <div class="image">
+                                                                                                    <img src="assets/images/categories/jackets.jpg">
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                        <div class="col-lg-2 col-md-2 col-sm-6 col-xs-6 othercol">
+                                                                                        <div class="ArtItem">
+                                                                                                <div class="image">
+                                                                                                    <img src="assets/images/categories/jeans.jpg">
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                        <div class="col-lg-2 col-md-2 col-sm-6 col-xs-6 othercol">
+                                                                                        <div class="ArtItem">
+                                                                                                <div class="image">
+                                                                                                    <img src="assets/images/categories/polo-shirt.jpg">
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                        <div class="col-lg-2 col-md-2 col-sm-6 col-xs-6 othercol">
+                                                                                        <div class="ArtItem">
+                                                                                                <div class="image">
+                                                                                                    <img src="assets/images/categories/shirt.jpg">
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                        <div class="col-lg-2 col-md-2 col-sm-6 col-xs-6 othercol">
+                                                                                        <div class="ArtItem">
+                                                                                                <div class="image">
+                                                                                                    <img src="assets/images/categories/t-shirt.jpg">
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                        
+                                                                                        
+                                                                                    </div>
+                                                                                    
+                                                                                    
+                                                                                </div>
+                                                                            </div>
+                                                                        
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                
+                                                                <div class="accordion-item">
+                                                                    <h2 class="accordion-header" id="flush-heading_AddDesign_4">
+                                                                        <button class="accordion-button fw-medium collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse_AddDesign_4" aria-expanded="false" aria-controls="flush-collapse_AddDesign_4">
+                                                                            <h3>
+                                                                                <span class="UpperTitle">Add Image From Facebook </span>
+                                                                                
+                                                                            </h3>
+                                                                        </button>
+                                                                    </h2>
+                                                                    <div id="flush-collapse_AddDesign_4" class="accordion-collapse collapse" aria-labelledby="flush-heading_AddDesign_4" data-bs-parent="#accordionAddDesign_4">
+                                                                        <div class="accordion-body text-muted">
+                                                                            <div class="AcordyBodyInputs">
+                                                                                <div class="form_group">
+                                                                                    <label>Facebook Link</label>
+                                                                                    <input type="text" class="form-control" placeholder="">
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="accordion-item">
+                                                                    <h2 class="accordion-header" id="flush-heading_AddDesign_5">
+                                                                        <button class="accordion-button fw-medium collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse_AddDesign_5" aria-expanded="false" aria-controls="flush-collapse_AddDesign_5">
+                                                                            <h3>
+                                                                                <span class="UpperTitle">Add Image From Instagram </span>
+                                                                                
+                                                                            </h3>
+                                                                        </button>
+                                                                    </h2>
+                                                                    <div id="flush-collapse_AddDesign_5" class="accordion-collapse collapse" aria-labelledby="flush-heading_AddDesign_5" data-bs-parent="#accordionAddDesign_5">
+                                                                        <div class="accordion-body text-muted">
+                                                                            <div class="AcordyBodyInputs">
+                                                                                <div class="form_group">
+                                                                                    <label>Instagram Link</label>
+                                                                                    <input type="text" class="form-control" placeholder="">
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="accordion-item">
+                                                                    <h2 class="accordion-header" id="flush-heading_AddDesign_6">
+                                                                        <button class="accordion-button fw-medium collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse_AddDesign_6" aria-expanded="false" aria-controls="flush-collapse_AddDesign_6">
+                                                                            <h3>
+                                                                                <span class="UpperTitle">Collection Print </span>
+                                                                                
+                                                                            </h3>
+                                                                        </button>
+                                                                    </h2>
+                                                                    <div id="flush-collapse_AddDesign_6" class="accordion-collapse collapse" aria-labelledby="flush-heading_AddDesign_6" data-bs-parent="#accordionAddDesign_6">
+                                                                        <div class="accordion-body text-muted">
+                                                                            <div class="p-3">
+                                                                                <button type="button" class="CollectionPrint">Collection Print</button>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                
+                                                              </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="tab-pane" id="Add_Text" role="tabpanel">
+                                                    <div class="AddTextTap">
+                                                        <div class="Title">
+                                                            <h2 class="">ENTER YOUR TEXT BELOW</h2>
+                                                        </div>
+                                                        <div class="AddTextBodyTap">
+                                                            <div class="TextOptions">
+                                                                <div class="elementItem">
+                                                                    <div class="IconTitle">
+                                                                        <img src="assets/images/NewImages/icons/fontType.png">
+                                                                        <span>Font</span>
+                                                                    </div>
+                                                                    <div class="InputElement">
+                                                                        <select class="SelectInput">
+                                                                            <option style="font-family: cursive">cursive</option>
+                                                                            <option style="font-family:fantasy">fantasy</option>
+                                                                            <option style="font-family:inherit">inherit</option>
+                                                                            <option style="font-family:monospace">monospace</option>
+                                                                            <option style="font-family:sans-serif">sans-serif</option>
+                                                                        </select>
+                                                                    </div>
+                                                                </div>
+                                                                
+                                                                <div class="elementItem">
+                                                                    <div class="IconTitle">
+                                                                        <img src="assets/images/NewImages/icons/fontSize.png">
+                                                                        <span>text Size</span>
+                                                                    </div>
+                                                                    <div class="InputElement">
+                                                                        <div class="InputRange">
+                                                                            <input type="text" id="range_Size">
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                
+                                                                <div class="elementItem">
+                                                                    <div class="IconTitle">
+                                                                        <img src="assets/images/NewImages/icons/blur.png">
+                                                                        <span>blur</span>
+                                                                    </div>
+                                                                    <div class="InputElement">
+                                                                        <div class="InputRange">
+                                                                            <input type="text" id="range_blur">
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="elementItem">
+                                                                    <div class="IconTitle">
+                                                                        <img src="assets/images/NewImages/icons/color-picker.png">
+                                                                        <span>picker</span>
+                                                                    </div>
+                                                                    <div class="InputElement">
+                                                                        <div class="InputRange">
+                                                                            <input type="text" id="range_picker">
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="elementItem">
+                                                                    <div class="IconTitle">
+                                                                        <img src="assets/images/NewImages/icons/menu.png">
+                                                                        <span>weigt</span>
+                                                                    </div>
+                                                                    <div class="InputElement">
+                                                                        <div class="InputRange">
+                                                                            <input type="text" id="range_weigt">
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="DowenSection">
+                                                                    <div class="elementItem_Solo">
+                                                                        <div class="IconTitle">
+                                                                            <img src="assets/images/NewImages/icons/copy-two-paper-sheets-interface-symbol.png">
+                                                                            <span>copy</span>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="elementItem_Solo">
+                                                                        <div class="IconTitle">
+                                                                            <img src="assets/images/NewImages/icons/semicircle.png">
+                                                                            <span>curve</span>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="elementItem_Solo">
+                                                                        <div class="IconTitle">
+                                                                            <img src="assets/images/NewImages/icons/italic.png">
+                                                                            <span>italic</span>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="elementItem_Solo">
+                                                                        <div class="IconTitle">
+                                                                            <img src="assets/images/NewImages/icons/paste.png">
+                                                                            <span>paste</span>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="elementItem_Solo">
+                                                                        <div class="IconTitle">
+                                                                            <img src="assets/images/NewImages/icons/b.png">
+                                                                            <span>bold</span>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="elementItem_Solo">
+                                                                        <div class="IconTitle">
+                                                                            <img src="assets/images/NewImages/icons/cut.png">
+                                                                            <span>cut</span>
+                                                                        </div>
+                                                                    </div>
+                                                                    
+                                                                    <div class="TextAreaBox">
+                                                                        <textarea placeholder="TEXT"></textarea>
+                                                                    </div>
+                                                                    <div class="AddBUTTON">
+                                                                        <button type="button" class="AddBTN">Add</button>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="tab-pane" id="Save_Load" role="tabpanel">
+                                                    <div class="AddDesignTap">
+                                                        <div class="Title">
+                                                            <h2 class="">Save / Load</h2>
+                                                            <span>Select an option</span>
+                                                        </div>
+                                                        <div class="AddDesignBodyTap">
+                                                            <div class="accordion accordion-flush" id="accordionSave_Load">
+                                                                
+                                                               
+                                                                <div class="accordion-item">
+                                                                    <h2 class="accordion-header" id="flush-heading_Save_Load_1">
+                                                                        <button class="accordion-button fw-medium collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse_Save_Load_1" aria-expanded="false" aria-controls="flush-collapse_Save_Load_1">
+                                                                            <h3>
+                                                                                <span class="UpperTitle">Name your design and click save </span>
+                                                                                
+                                                                            </h3>
+                                                                        </button>
+                                                                    </h2>
+                                                                    <div id="flush-collapse_Save_Load_1" class="accordion-collapse collapse" aria-labelledby="flush-heading_Save_Load_1" data-bs-parent="#accordionSave_Load_1">
+                                                                        <div class="accordion-body text-muted">
+                                                                            <div class="AcordyBodyInputs">
+                                                                                <div class="form_group">
+                                                                                    
+                                                                                    <input type="text" class="form-control" placeholder="Text ">
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                
+                                                          
+                                                                
+                                                                
+                                                                <div class="accordion-item">
+                                                                    <h2 class="accordion-header" id="flush-heading_Save_Load_2">
+                                                                        <button class="accordion-button fw-medium collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse_Save_Load_2" aria-expanded="false" aria-controls="flush-collapse_Save_Load_2">
+                                                                            <h3>
+                                                                                <span class="UpperTitle">Save Design</span>
+                                                                                
+                                                                            </h3>
+                                                                        </button>
+                                                                    </h2>
+                                                                    <div id="flush-collapse_Save_Load_2" class="accordion-collapse collapse" aria-labelledby="flush-heading_Save_Load_2" data-bs-parent="#accordionSave_Load_2">
+                                                                        <div class="accordion-body text-muted">
+                                                                            <div class="p-3">
+                                                                                <button type="button" class="CollectionPrint">Save Design </button>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                
+                                                                <div class="accordion-item">
+                                                                    <h2 class="accordion-header" id="flush-heading_Save_Load_3">
+                                                                        <button class="accordion-button fw-medium collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse_Save_Load_3" aria-expanded="false" aria-controls="flush-collapse_Save_Load_3">
+                                                                            <h3>
+                                                                                <span class="UpperTitle">Load Design</span>
+                                                                                
+                                                                            </h3>
+                                                                        </button>
+                                                                    </h2>
+                                                                    <div id="flush-collapse_Save_Load_3" class="accordion-collapse collapse" aria-labelledby="flush-heading_Save_Load_3" data-bs-parent="#accordionSave_Load_3">
+                                                                        <div class="accordion-body text-muted">
+                                                                            <div class="p-3">
+                                                                                <button type="button" class="CollectionPrint">Load Design </button>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                
+                                                              </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="tab-pane" id="Quote_Buy" role="tabpanel">
+                                                    <p class="mb-0">
+                                                        Trust fund seitan letterpress, keytar raw denim keffiyeh etsy
+                                                        art party before they sold out master cleanse gluten-free squid
+                                                        scenester freegan cosby sweater. Fanny pack portland seitan DIY,
+                                                        art party locavore wolf cliche high life echo park Austin. Cred
+                                                        vinyl keffiyeh DIY salvia PBR, banh mi before they sold out
+                                                        farm-to-table.
+                                                    </p>
+                                                </div>
+                                        </div>
+        
+                                        </div>
+                                       
+                                    </div>
+                                </div>
+                                
 
                                 <label for="tshirt-design">T-Shirt Design:</label>
                                 <select id="tshirt-design">
@@ -723,6 +1515,19 @@
     <script src="assets/js/modernizr-3.11.7.min.js"></script>
     <script src="assets/js/jquery-3.6.0.min.js"></script>
     <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/libs/ion-rangeslider/js/ion.rangeSlider.min.js"></script>
+    <script>
+        
+        
+        
+        $(document).ready(function () {
+          $("#range_Size").ionRangeSlider({skin: "square", min: 0, max: 100, hide_min_max: true, step: 2, from: 14, postfix: "px" });
+          $("#range_blur").ionRangeSlider({skin: "square", min: 0, max: 100, hide_min_max: true, step: 1, from: 50, postfix: "" });
+          $("#range_picker").ionRangeSlider({skin: "square", min: 0, max: 100, hide_min_max: true, step: 1, from: 25, postfix: "" });
+          $("#range_weigt").ionRangeSlider({skin: "square", min: 0, max: 100, hide_min_max: true, step: 1, from: 10, postfix: "px" });
+
+        });
+    </script>
 
     <!-- Plugins JS -->
     <script src="assets/js/swiper-bundle.min.js"></script>
@@ -737,6 +1542,31 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fabric.js/4.3.1/fabric.min.js"></script>
 
     <script src="assets/js/custom.js"></script>
+    <script>
+        $(document).ready(function() {
+          $('.ProItem').click(function() {
+            $('.ProItem').removeClass('active'); // Remove active class from all items
+            $(this).addClass('active'); // Add active class to the clicked item
+          });
+        });
+    </script>
+    <script>
+        $(document).ready(function() {
+          $('.colorItem').click(function() {
+            $('.colorItem').removeClass('active'); // Remove active class from all items
+            $(this).addClass('active'); // Add active class to the clicked item
+          });
+        });
+    </script>
+    <script>
+        $(document).ready(function() {
+          $('.ArtItem').click(function() {
+            $('.ArtItem').removeClass('active'); // Remove active class from all items
+            $(this).addClass('active'); // Add active class to the clicked item
+          });
+        });
+    </script>
+    
 </body>
 
 
