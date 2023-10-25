@@ -24,7 +24,7 @@
         rel="stylesheet">
 
     <!-- Vendor CSS (Bootstrap & Icon Font) -->
-    <link href="assets/libs/ion-rangeslider/css/ion.rangeSlider.min.css" rel="stylesheet" type="text/css"/>
+    <link href="assets/libs/ion-rangeslider/css/ion.rangeSlider.min.css" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/icons.min.css">
 
@@ -35,6 +35,7 @@
 
     <!-- Style CSS -->
     <link rel="stylesheet" href="assets/css/style.css">
+    <!-- <link rel="stylesheet" href="assets/css/dark-theme.css"> -->
 
 
 </head>
@@ -182,280 +183,528 @@
         <div class="col-full">
 
             <div class="woocommerce"></div>
-            <div id="primary" class="content-area">
+            <div id="primary" class="content-area my-5">
                 <main id="main" class="site-main" role="main">
 
 
-                    
+
                     <div class="container">
 
 
                         <div class="row">
-                            <div class="col-sm-6 col-md-6">
+                            <div class="col-sm-6 col-md-6" id="front-canvas">
                                 <!-- Create the container of the tool -->
                                 <div class="TeshertDive" id="tshirt-div">
                                     <img class="ImageTeshert" id="tshirt-backgroundpicture"
-                                        src="https://ourcodeworld.com/public-media/gallery/gallery-5d5afd3f1c7d6.png" />
+                                        src="assets/images/products/2_front.png" />
                                     <div id="drawingArea" class="drawing-area">
                                         <div class="canvas-container">
-                                            <canvas id="tshirt-canvas" width="600" height="400"></canvas>
+                                            <canvas id="tshirt-canvas-front" width="600" height="400"></canvas>
                                         </div>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-md-6" id="back-canvas">
+                                <!-- Create the container of the tool -->
+                                <div class="TeshertDive" id="tshirt-div-back">
+                                    <img class="ImageTeshert" id="tshirt-backgroundpicture-back"
+                                        src="assets/images/products/2_back.png" />
+                                    <div id="drawingArea" class="drawing-area">
+                                        <div class="canvas-container">
+                                            <canvas id="tshirt-canvas-front" width="600" height="400"></canvas>
+                                        </div>
+                                        
                                     </div>
                                 </div>
                             </div>
                             <div class="col-6">
-                                
+
                                 <div class="CustomTapsDesign">
                                     <div class="CustomTapsbody">
                                         <div class="TapsHeaders">
                                             <ul class="nav nav-pills nav-justified" role="tablist">
                                                 <li class="nav-item waves-effect waves-light">
-                                                    <a class="nav-link active" data-bs-toggle="tab" href="#Product" role="tab">
+                                                    <a class="nav-link active" data-bs-toggle="tab" href="#Product"
+                                                        role="tab">
                                                         <div class="forflex">
                                                             <img src="assets/images/NewImages/icons/t-shirt.png">
                                                             <span class="d-none d-sm-block">Product</span>
-                                                        </div> 
+                                                        </div>
                                                     </a>
                                                 </li>
                                                 <li class="nav-item waves-effect waves-light">
-                                                    <a class="nav-link" data-bs-toggle="tab" href="#Add_Design" role="tab">
+                                                    <a class="nav-link" data-bs-toggle="tab" href="#Add_Design"
+                                                        role="tab">
                                                         <div class="forflex">
                                                             <img src="assets/images/NewImages/icons/camera.png">
                                                             <span class="d-none d-sm-block">Add Design</span>
-                                                        </div> 
+                                                        </div>
                                                     </a>
                                                 </li>
                                                 <li class="nav-item waves-effect waves-light">
-                                                    <a class="nav-link" data-bs-toggle="tab" href="#Add_Text" role="tab">
+                                                    <a class="nav-link" data-bs-toggle="tab" href="#Add_Text"
+                                                        role="tab">
                                                         <div class="forflex">
                                                             <img src="assets/images/NewImages/icons/text.png">
                                                             <span class="d-none d-sm-block">Add Text</span>
-                                                        </div> 
+                                                        </div>
                                                     </a>
                                                 </li>
                                                 <li class="nav-item waves-effect waves-light">
-                                                    <a class="nav-link" data-bs-toggle="tab" href="#Save_Load" role="tab">
+                                                    <a class="nav-link" data-bs-toggle="tab" href="#Save_Load"
+                                                        role="tab">
                                                         <div class="forflex">
                                                             <img src="assets/images/NewImages/icons/download.png">
                                                             <span class="d-none d-sm-block">Save/Load</span>
-                                                        </div>    
+                                                        </div>
                                                     </a>
                                                 </li>
                                                 <li class="nav-item waves-effect waves-light">
-                                                    <a class="nav-link CustomTapStyle" data-bs-toggle="tab" href="#Quote_Buy" role="tab">
+                                                    <a class="nav-link CustomTapStyle" data-bs-toggle="tab"
+                                                        href="#Quote_Buy" role="tab">
                                                         <div class="forflex">
                                                             <img src="assets/images/NewImages/icons/grocery-store.png">
                                                             <span class="d-none d-sm-block">Quote/Buy</span>
-                                                        </div>    
+                                                        </div>
                                                     </a>
                                                 </li>
                                             </ul>
-        
+
                                         </div>
                                         <div class="TapsContentBody">
-                                             <div class="tab-content pt-3 text-muted">
+                                            <div class="tab-content pt-3 text-muted">
                                                 <div class="tab-pane active" id="Product" role="tabpanel">
                                                     <div class="BodyTaps">
                                                         <div class="ProductTap">
-                                                            <div class="accordion accordion-flush" id="accordionProduct">
+                                                            <div class="accordion accordion-flush"
+                                                                id="accordionProduct">
                                                                 <div class="accordion-item">
                                                                     <h2 class="accordion-header" id="flush-heading_1">
-                                                                        <button class="accordion-button fw-medium" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse_1" aria-expanded="true" aria-controls="flush-collapse_1">
-                                                                        Choose Product 
+                                                                        <button class="accordion-button fw-medium"
+                                                                            type="button" data-bs-toggle="collapse"
+                                                                            data-bs-target="#flush-collapse_1"
+                                                                            aria-expanded="true"
+                                                                            aria-controls="flush-collapse_1">
+                                                                            Choose Product
                                                                         </button>
                                                                         <a class="BTNCustom" href="#">All Product</a>
                                                                     </h2>
-                                                                    <div id="flush-collapse_1" class="accordion-collapse collapse show" aria-labelledby="flush-heading_1" data-bs-parent="#accordionProduct_1">
+                                                                    <div id="flush-collapse_1"
+                                                                        class="accordion-collapse collapse show"
+                                                                        aria-labelledby="flush-heading_1"
+                                                                        data-bs-parent="#accordionProduct_1">
                                                                         <div class="accordion-body text-muted">
                                                                             <div class="ProductItems">
-                                                                                
-                                                                                <div class="swiper product-taps-active position-relative">
+
+                                                                                <div
+                                                                                    class="swiper product-taps-active position-relative">
                                                                                     <div class="swiper-wrapper">
                                                                                         <div class="swiper-slide">
                                                                                             <div class="ProItem active">
                                                                                                 <div class="Image">
-                                                                                                    <img src="assets/images/NewImages/icons/tsheert.jpg">
+                                                                                                    <img
+                                                                                                    onclick="changetshirt(this.src)"
+                                                                                                        src="assets/images/products/2_front.png">
                                                                                                 </div>
                                                                                             </div>
                                                                                         </div>
                                                                                         <div class="swiper-slide">
                                                                                             <div class="ProItem">
                                                                                                 <div class="Image">
-                                                                                                    <img src="assets/images/NewImages/icons/cap.png">
+                                                                                                    <img
+                                                                                                    onclick="changetshirt(this.src)"
+                                                                                                        src="assets/images/products/3_front.png">
                                                                                                 </div>
                                                                                             </div>
                                                                                         </div>
                                                                                         <div class="swiper-slide">
                                                                                             <div class="ProItem">
                                                                                                 <div class="Image">
-                                                                                                    <img src="assets/images/NewImages/icons/tsheert.jpg">
+                                                                                                    <img
+                                                                                                    onclick="changetshirt(this.src)"
+                                                                                                        src="assets/images/products/5_front.png">
                                                                                                 </div>
                                                                                             </div>
                                                                                         </div>
                                                                                         <div class="swiper-slide">
                                                                                             <div class="ProItem">
                                                                                                 <div class="Image">
-                                                                                                    <img src="assets/images/NewImages/icons/cap.png">
+                                                                                                    <img
+                                                                                                    onclick="changetshirt(this.src)"
+                                                                                                        src="assets/images/products/110_front.png">
                                                                                                 </div>
                                                                                             </div>
                                                                                         </div>
                                                                                         <div class="swiper-slide">
                                                                                             <div class="ProItem">
                                                                                                 <div class="Image">
-                                                                                                    <img src="assets/images/NewImages/icons/tsheert.jpg">
+                                                                                                    <img
+                                                                                                    onclick="changetshirt(this.src)"
+                                                                                                        src="assets/images/products/111_front.png">
                                                                                                 </div>
                                                                                             </div>
                                                                                         </div>
                                                                                         <div class="swiper-slide">
                                                                                             <div class="ProItem">
                                                                                                 <div class="Image">
-                                                                                                    <img src="assets/images/NewImages/icons/cap.png">
+                                                                                                    <img
+                                                                                                    onclick="changetshirt(this.src)"
+                                                                                                        src="assets/images/products/56_front.png">
                                                                                                 </div>
                                                                                             </div>
                                                                                         </div>
                                                                                         <div class="swiper-slide">
                                                                                             <div class="ProItem">
                                                                                                 <div class="Image">
-                                                                                                    <img src="assets/images/NewImages/icons/tsheert.jpg">
+                                                                                                    <img
+                                                                                                      onclick="changetshirt(this.src)"
+                                                                                                        src="assets/images/products/60_front.png">
                                                                                                 </div>
                                                                                             </div>
                                                                                         </div>
                                                                                     </div>
                                                                                 </div>
-                                                                                
-                                                                                
-                                                                                
-                                                                                
+
+
+
+
                                                                             </div>
-                                                                        
+
                                                                         </div>
                                                                     </div>
                                                                 </div>
                                                                 <div class="accordion-item">
                                                                     <h2 class="accordion-header" id="flush-heading_2">
-                                                                        <button class="accordion-button fw-medium" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse_2" aria-expanded="true" aria-controls="flush-collapse_2">
-                                                                        Product Options
+                                                                        <button class="accordion-button fw-medium"
+                                                                            type="button" data-bs-toggle="collapse"
+                                                                            data-bs-target="#flush-collapse_2"
+                                                                            aria-expanded="true"
+                                                                            aria-controls="flush-collapse_2">
+                                                                            Product Options
                                                                         </button>
                                                                     </h2>
-                                                                    <div id="flush-collapse_2" class="accordion-collapse collapse show" aria-labelledby="flush-heading_2" data-bs-parent="#accordionProduct_2">
+                                                                    <div id="flush-collapse_2"
+                                                                        class="accordion-collapse collapse show"
+                                                                        aria-labelledby="flush-heading_2"
+                                                                        data-bs-parent="#accordionProduct_2">
                                                                         <div class="accordion-body text-muted">
                                                                             <div class="ProductColor">
                                                                                 <h2>Choose Product Color</h2>
-                                                                                <div style="padding: 15px">
-                                                                                    <label for="color_1" class="colorItem active" style="background: #fff">
-                                                                                    <span class="IconCheck bx bx-check" style="color: #000"></span>
-                                                                                    <input checked id="color_1" class="ColorInputName" type="radio" name="colorName" value="#f00">
-                                                                                </label>
-                                                                                <label for="color_2" class="colorItem" style="background: #cacaca">
-                                                                                    <span class="IconCheck bx bx-check"></span>
-                                                                                    <input id="color_2" class="ColorInputName" type="radio" name="colorName" value="#f00">
-                                                                                </label>
-                                                                                <label for="color_3" class="colorItem" style="background: #b0b0b0">
-                                                                                    <span class="IconCheck bx bx-check" ></span>
-                                                                                    <input id="color_3" class="ColorInputName" type="radio" name="colorName" value="#f0f">
-                                                                                </label>
-                                                                                <label for="color_4" class="colorItem" style="background: #00f">
-                                                                                    <span class="IconCheck bx bx-check"></span>
-                                                                                    <input id="color_4" class="ColorInputName" type="radio" name="colorName" value="#00f">
-                                                                                </label>
-                                                                                <label for="color_2" class="colorItem" style="background: #f00">
-                                                                                    <span class="IconCheck bx bx-check"></span>
-                                                                                    <input id="color_2" class="ColorInputName" type="radio" name="colorName" value="#f00">
-                                                                                </label>
-                                                                                <label for="color_3" class="colorItem" style="background: #f0f">
-                                                                                    <span class="IconCheck bx bx-check" ></span>
-                                                                                    <input id="color_3" class="ColorInputName" type="radio" name="colorName" value="#f0f">
-                                                                                </label>
-                                                                                <label for="color_4" class="colorItem" style="background: #00f">
-                                                                                    <span class="IconCheck bx bx-check"></span>
-                                                                                    <input id="color_4" class="ColorInputName" type="radio" name="colorName" value="#00f">
-                                                                                </label>
-                                                                                <label for="color_2" class="colorItem" style="background: #f00">
-                                                                                    <span class="IconCheck bx bx-check"></span>
-                                                                                    <input id="color_2" class="ColorInputName" type="radio" name="colorName" value="#f00">
-                                                                                </label>
-                                                                                <label for="color_3" class="colorItem" style="background: #f0f">
-                                                                                    <span class="IconCheck bx bx-check" ></span>
-                                                                                    <input id="color_3" class="ColorInputName" type="radio" name="colorName" value="#f0f">
-                                                                                </label>
-                                                                                <label for="color_4" class="colorItem" style="background: #00f">
-                                                                                    <span class="IconCheck bx bx-check"></span>
-                                                                                    <input id="color_4" class="ColorInputName" type="radio" name="colorName" value="#00f">
-                                                                                </label>
-                                                                                <label for="color_2" class="colorItem" style="background: #f00">
-                                                                                    <span class="IconCheck bx bx-check"></span>
-                                                                                    <input id="color_2" class="ColorInputName" type="radio" name="colorName" value="#f00">
-                                                                                </label>
-                                                                                <label for="color_3" class="colorItem" style="background: #f0f">
-                                                                                    <span class="IconCheck bx bx-check" ></span>
-                                                                                    <input id="color_3" class="ColorInputName" type="radio" name="colorName" value="#f0f">
-                                                                                </label>
-                                                                                <label for="color_4" class="colorItem" style="background: #00f">
-                                                                                    <span class="IconCheck bx bx-check"></span>
-                                                                                    <input id="color_4" class="ColorInputName" type="radio" name="colorName" value="#00f">
-                                                                                </label>
-                                                                                <label for="color_2" class="colorItem" style="background: #f00">
-                                                                                    <span class="IconCheck bx bx-check"></span>
-                                                                                    <input id="color_2" class="ColorInputName" type="radio" name="colorName" value="#f00">
-                                                                                </label>
-                                                                                <label for="color_3" class="colorItem" style="background: #f0f">
-                                                                                    <span class="IconCheck bx bx-check" ></span>
-                                                                                    <input id="color_3" class="ColorInputName" type="radio" name="colorName" value="#f0f">
-                                                                                </label>
-                                                                                <label for="color_4" class="colorItem" style="background: #00f">
-                                                                                    <span class="IconCheck bx bx-check"></span>
-                                                                                    <input id="color_4" class="ColorInputName" type="radio" name="colorName" value="#00f">
-                                                                                </label>
-                                                                                <label for="color_2" class="colorItem" style="background: #f00">
-                                                                                    <span class="IconCheck bx bx-check"></span>
-                                                                                    <input id="color_2" class="ColorInputName" type="radio" name="colorName" value="#f00">
-                                                                                </label>
-                                                                                <label for="color_3" class="colorItem" style="background: #f0f">
-                                                                                    <span class="IconCheck bx bx-check" ></span>
-                                                                                    <input id="color_3" class="ColorInputName" type="radio" name="colorName" value="#f0f">
-                                                                                </label>
-                                                                                <label for="color_4" class="colorItem" style="background: #00f">
-                                                                                    <span class="IconCheck bx bx-check"></span>
-                                                                                    <input id="color_4" class="ColorInputName" type="radio" name="colorName" value="#00f">
-                                                                                </label>
+                                                                                <div style="padding: 10px; padding-bottom:20px ;">
+                                                                                    <label for="color_1"
+                                                                                        class="colorItem active"
+                                                                                        style="background: #fff">
+                                                                                        <span
+                                                                                            class="IconCheck bx bx-check"
+                                                                                            style="color: #fff"></span>
+                                                                                        <input checked id="color_1"
+                                                                                        onchange="changeColor(this.value)"
+                                                                                            class="ColorInputName"
+                                                                                            type="radio"
+                                                                                            name="colorName"
+                                                                                            value="#fff">
+                                                                                    </label>
+                                                                                    <label for="color_2"
+                                                                                        class="colorItem"
+                                                                                        style="background: #9e9a9a">
+                                                                                        <span
+                                                                                            class="IconCheck bx bx-check"></span>
+                                                                                        <input
+                                                                                        onchange="changeColor(this.value)"
+                                                                                        id="color_2"
+                                                                                            class="ColorInputName"
+                                                                                            type="radio"
+                                                                                            name="colorName"
+                                                                                            value="#9e9a9a">
+                                                                                    </label>
+                                                                                    <label for="color_3"
+                                                                                        class="colorItem"
+                                                                                        style="background: #cacaca">
+                                                                                        <span
+                                                                                            class="IconCheck bx bx-check"></span>
+                                                                                        <input
+                                                                                        onchange="changeColor(this.value)"
+                                                                                        id="color_3"
+                                                                                            class="ColorInputName"
+                                                                                            type="radio"
+                                                                                            name="colorName"
+                                                                                            value="#cacaca">
+                                                                                    </label>
+                                                                                    <label for="color_4"
+                                                                                        class="colorItem"
+                                                                                        style="background: #000">
+                                                                                        <span
+                                                                                            class="IconCheck bx bx-check"></span>
+                                                                                        <input
+                                                                                        onchange="changeColor(this.value)"
+                                                                                        id="color_4"
+                                                                                            class="ColorInputName"
+                                                                                            type="radio"
+                                                                                            name="colorName"
+                                                                                            value="#000">
+                                                                                    </label>
+                                                                                    <label for="color_5"
+                                                                                        class="colorItem"
+                                                                                        style="background: #fe4545">
+                                                                                        <span
+                                                                                            class="IconCheck bx bx-check"></span>
+                                                                                        <input
+                                                                                        onchange="changeColor(this.value)"
+                                                                                        id="color_5"
+                                                                                            class="ColorInputName"
+                                                                                            type="radio"
+                                                                                            name="colorName"
+                                                                                            value="#fe4545">
+                                                                                    </label>
+                                                                                    <label for="color_6"
+                                                                                        class="colorItem"
+                                                                                        style="background: #ff0000">
+                                                                                        <span
+                                                                                            class="IconCheck bx bx-check"></span>
+                                                                                        <input
+                                                                                        onchange="changeColor(this.value)"
+                                                                                        id="color_6"
+                                                                                            class="ColorInputName"
+                                                                                            type="radio"
+                                                                                            name="colorName"
+                                                                                            value="#ff0000">
+                                                                                    </label>
+                                                                                    <label for="color_7"
+                                                                                        class="colorItem"
+                                                                                        style="background: #01ff01">
+                                                                                        <span
+                                                                                            class="IconCheck bx bx-check"></span>
+                                                                                        <input
+                                                                                        onchange="changeColor(this.value)"
+                                                                                        id="color_7"
+                                                                                            class="ColorInputName"
+                                                                                            type="radio"
+                                                                                            name="colorName"
+                                                                                            value="#01ff01">
+                                                                                    </label>
+                                                                                    <label for="color_8"
+                                                                                        class="colorItem"
+                                                                                        style="background: #018001">
+                                                                                        <span
+                                                                                            class="IconCheck bx bx-check"></span>
+                                                                                        <input
+                                                                                        onchange="changeColor(this.value)"
+                                                                                        id="color_8"
+                                                                                            class="ColorInputName"
+                                                                                            type="radio"
+                                                                                            name="colorName"
+                                                                                            value="#018001">
+                                                                                    </label>
+                                                                                    <label for="color_9"
+                                                                                        class="colorItem"
+                                                                                        style="background: #0000ff">
+                                                                                        <span
+                                                                                            class="IconCheck bx bx-check"></span>
+                                                                                        <input
+                                                                                        onchange="changeColor(this.value)"
+                                                                                        id="color_9"
+                                                                                            class="ColorInputName"
+                                                                                            type="radio"
+                                                                                            name="colorName"
+                                                                                            value="#0000ff">
+                                                                                    </label>
+                                                                                    <label for="color_10"
+                                                                                        class="colorItem"
+                                                                                        style="background: #000075">
+                                                                                        <span
+                                                                                            class="IconCheck bx bx-check"></span>
+                                                                                        <input
+                                                                                        onchange="changeColor(this.value)"
+                                                                                        id="color_10"
+                                                                                            class="ColorInputName"
+                                                                                            type="radio"
+                                                                                            name="colorName"
+                                                                                            value="#000075">
+                                                                                    </label>
+                                                                                    <label for="color_11"
+                                                                                        class="colorItem"
+                                                                                        style="background: #ffff00">
+                                                                                        <span
+                                                                                            class="IconCheck bx bx-check"></span>
+                                                                                        <input
+                                                                                        onchange="changeColor(this.value)"
+                                                                                        id="color_11"
+                                                                                            class="ColorInputName"
+                                                                                            type="radio"
+                                                                                            name="colorName"
+                                                                                            value="#ffff00">
+                                                                                    </label>
+                                                                                    <label for="color_12"
+                                                                                        class="colorItem"
+                                                                                        style="background: #7a7a01">
+                                                                                        <span
+                                                                                            class="IconCheck bx bx-check"></span>
+                                                                                        <input
+                                                                                        onchange="changeColor(this.value)"
+                                                                                        id="color_12"
+                                                                                            class="ColorInputName"
+                                                                                            type="radio"
+                                                                                            name="colorName"
+                                                                                            value="#7a7a01">
+                                                                                    </label>
+                                                                                    <label for="color_13"
+                                                                                        class="colorItem"
+                                                                                        style="background: #00ffff">
+                                                                                        <span
+                                                                                            class="IconCheck bx bx-check"></span>
+                                                                                        <input
+                                                                                        onchange="changeColor(this.value)"
+                                                                                        id="color_13"
+                                                                                            class="ColorInputName"
+                                                                                            type="radio"
+                                                                                            name="colorName"
+                                                                                            value="#00ffff">
+                                                                                    </label>
+                                                                                    <label for="color_14"
+                                                                                        class="colorItem"
+                                                                                        style="background: #ff00ff">
+                                                                                        <span
+                                                                                            class="IconCheck bx bx-check"></span>
+                                                                                        <input
+                                                                                        onchange="changeColor(this.value)"
+                                                                                        id="color_14"
+                                                                                            class="ColorInputName"
+                                                                                            type="radio"
+                                                                                            name="colorName"
+                                                                                            value="#ff00ff">
+                                                                                    </label>
+                                                                                    <label for="color_15"
+                                                                                        class="colorItem"
+                                                                                        style="background: #780178">
+                                                                                        <span
+                                                                                            class="IconCheck bx bx-check"></span>
+                                                                                        <input
+                                                                                        onchange="changeColor(this.value)"
+                                                                                        id="color_15"
+                                                                                            class="ColorInputName"
+                                                                                            type="radio"
+                                                                                            name="colorName"
+                                                                                            value="#780178">
+                                                                                    </label>
+                                                                                    <label for="color_16"
+                                                                                        class="colorItem"
+                                                                                        style="background: #068b8e">
+                                                                                        <span
+                                                                                            class="IconCheck bx bx-check"></span>
+                                                                                        <input
+                                                                                        onchange="changeColor(this.value)"
+                                                                                        id="color_16"
+                                                                                            class="ColorInputName"
+                                                                                            type="radio"
+                                                                                            name="colorName"
+                                                                                            value="#068b8e">
+                                                                                    </label>
+                                                                                    <label for="color_17"
+                                                                                        class="colorItem"
+                                                                                        style="background: #ff7f00">
+                                                                                        <span
+                                                                                            class="IconCheck bx bx-check"></span>
+                                                                                        <input
+                                                                                        onchange="changeColor(this.value)"
+                                                                                        id="color_17"
+                                                                                            class="ColorInputName"
+                                                                                            type="radio"
+                                                                                            name="colorName"
+                                                                                            value="#ff7f00">
+                                                                                    </label>
+                                                                                    <label for="color_18"
+                                                                                        class="colorItem"
+                                                                                        style="background: #7f3f00">
+                                                                                        <span
+                                                                                            class="IconCheck bx bx-check"></span>
+                                                                                        <input
+                                                                                        onchange="changeColor(this.value)"
+                                                                                        id="color_18"
+                                                                                            class="ColorInputName"
+                                                                                            type="radio"
+                                                                                            name="colorName"
+                                                                                            value="#7f3f00">
+                                                                                    </label>
+                                                                                    
+                                                                                    <!-- color picker -->
+                                                                                    <label for="color_21"
+                                                                                        class="colorItem"
+                                                                                        style="background-image:url(./assets/images/download.png); background-size: cover;
+                                                                                        ">
+                                                                                        <span
+                                                                                            class="IconCheck bx bx-check"></span>
+                                                                                        <input
+                                                                                        oninput="changeColor(this.value)"
+                                                                                        id="color_21"
+                                                                                            class="ColorInputName"
+                                                                                            type="color"
+                                                                                            name="colorName"
+                                                                                            value="#7f0000">
+                                                                                    </label>
+
                                                                                 </div>
                                                                                 <h2>Size</h2>
                                                                                 <div class="SizeBoxs">
                                                                                     <div class="row">
-                                                                                        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6">
+                                                                                        <div
+                                                                                            class="col-lg-4 col-md-4 col-sm-6 col-xs-6">
                                                                                             <div class="SizeItem">
                                                                                                 <p>S</p>
-                                                                                                <input name="size_s" value="s" type="number" class="InputNumber">
+                                                                                                <input name="size_s"
+                                                                                                    value="s"
+                                                                                                    type="number"
+                                                                                                    class="InputNumber">
                                                                                             </div>
                                                                                         </div>
-                                                                                        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6">
+                                                                                        <div
+                                                                                            class="col-lg-4 col-md-4 col-sm-6 col-xs-6">
                                                                                             <div class="SizeItem">
                                                                                                 <p>M</p>
-                                                                                                <input name="size_M" value="M" type="number" class="InputNumber">
+                                                                                                <input name="size_M"
+                                                                                                    value="M"
+                                                                                                    type="number"
+                                                                                                    class="InputNumber">
                                                                                             </div>
                                                                                         </div>
-                                                                                        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6">
+                                                                                        <div
+                                                                                            class="col-lg-4 col-md-4 col-sm-6 col-xs-6">
                                                                                             <div class="SizeItem">
                                                                                                 <p>L</p>
-                                                                                                <input name="size_l" value="L" type="number" class="InputNumber">
+                                                                                                <input name="size_l"
+                                                                                                    value="L"
+                                                                                                    type="number"
+                                                                                                    class="InputNumber">
                                                                                             </div>
                                                                                         </div>
-                                                                                        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6">
+                                                                                        <div
+                                                                                            class="col-lg-4 col-md-4 col-sm-6 col-xs-6">
                                                                                             <div class="SizeItem">
                                                                                                 <p>XL</p>
-                                                                                                <input name="size_XL" value="XL" type="number" class="InputNumber">
+                                                                                                <input name="size_XL"
+                                                                                                    value="XL"
+                                                                                                    type="number"
+                                                                                                    class="InputNumber">
                                                                                             </div>
                                                                                         </div>
-                                                                                        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6">
+                                                                                        <div
+                                                                                            class="col-lg-4 col-md-4 col-sm-6 col-xs-6">
                                                                                             <div class="SizeItem">
                                                                                                 <p>XXL</p>
-                                                                                                <input name="size_XXL" value="XXL" type="number" class="InputNumber">
+                                                                                                <input name="size_XXL"
+                                                                                                    value="XXL"
+                                                                                                    type="number"
+                                                                                                    class="InputNumber">
                                                                                             </div>
                                                                                         </div>
-                                                                                        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6">
+                                                                                        <div
+                                                                                            class="col-lg-4 col-md-4 col-sm-6 col-xs-6">
                                                                                             <div class="SizeItem">
                                                                                                 <p>XXXL</p>
-                                                                                                <input name="size_XXXL" value="XXXL" type="number" class="InputNumber">
+                                                                                                <input name="size_XXXL"
+                                                                                                    value="XXXL"
+                                                                                                    type="number"
+                                                                                                    class="InputNumber">
                                                                                             </div>
                                                                                         </div>
                                                                                     </div>
@@ -465,7 +714,7 @@
                                                                     </div>
                                                                 </div>
 
-                                                          </div>
+                                                            </div>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -476,317 +725,438 @@
                                                             <span>Select an option</span>
                                                         </div>
                                                         <div class="AddDesignBodyTap">
-                                                            <div class="accordion accordion-flush" id="accordionAddDesign">
-                                                                
+                                                            <div class="accordion accordion-flush"
+                                                                id="accordionAddDesign">
+
                                                                 <div class="accordion-item">
-                                                                    <h2 class="accordion-header" id="flush-heading_AddDesign_1">
-                                                                        <button class="accordion-button fw-medium collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse_AddDesign_1" aria-expanded="false" aria-controls="flush-collapse_AddDesign_1">
+                                                                    <h2 class="accordion-header"
+                                                                        id="flush-heading_AddDesign_1">
+                                                                        <button
+                                                                            class="accordion-button fw-medium collapsed"
+                                                                            type="button" data-bs-toggle="collapse"
+                                                                            data-bs-target="#flush-collapse_AddDesign_1"
+                                                                            aria-expanded="false"
+                                                                            aria-controls="flush-collapse_AddDesign_1">
                                                                             <h3>
-                                                                                <span class="UpperTitle">Clip Art </span>
-                                                                                <span class="DowenTitle">Browse from our templates</span>
+                                                                                <span class="UpperTitle">Clip Art
+                                                                                </span>
+                                                                                <span class="DowenTitle">Browse from our
+                                                                                    templates</span>
                                                                             </h3>
-                                                                            
+
                                                                         </button>
                                                                     </h2>
-                                                                    <div id="flush-collapse_AddDesign_1" class="accordion-collapse collapse" aria-labelledby="flush-heading_AddDesign_1" data-bs-parent="#accordionAddDesign_1">
+                                                                    <div id="flush-collapse_AddDesign_1"
+                                                                        class="accordion-collapse collapse"
+                                                                        aria-labelledby="flush-heading_AddDesign_1"
+                                                                        data-bs-parent="#accordionAddDesign_1">
                                                                         <div class="accordion-body text-muted">
                                                                             <div class="AcordyBodyInputs">
                                                                                 <div class="ClipArts">
-                                                                                    
-                                                                                    
+
+
                                                                                     <div class="row otherrow">
-                                                                                        <div class="col-lg-2 col-md-2 col-sm-6 col-xs-6 othercol">
+                                                                                        <div
+                                                                                            class="col-lg-2 col-md-2 col-sm-6 col-xs-6 othercol">
                                                                                             <div class="ArtItem">
                                                                                                 <div class="image">
-                                                                                                    <img src="assets/images/categories/dress.jpg">
+                                                                                                    <img
+                                                                                                        src="assets/images/categories/dress.jpg">
                                                                                                 </div>
                                                                                             </div>
                                                                                         </div>
-                                                                                        
-                                                                                        <div class="col-lg-2 col-md-2 col-sm-6 col-xs-6 othercol">
+
+                                                                                        <div
+                                                                                            class="col-lg-2 col-md-2 col-sm-6 col-xs-6 othercol">
                                                                                             <div class="ArtItem">
                                                                                                 <div class="image">
-                                                                                                    <img src="assets/images/categories/jackets.jpg">
+                                                                                                    <img
+                                                                                                        src="assets/images/categories/jackets.jpg">
                                                                                                 </div>
                                                                                             </div>
                                                                                         </div>
-                                                                                        <div class="col-lg-2 col-md-2 col-sm-6 col-xs-6 othercol">
-                                                                                        <div class="ArtItem">
-                                                                                                <div class="image">
-                                                                                                    <img src="assets/images/categories/jeans.jpg">
-                                                                                                </div>
-                                                                                            </div>
-                                                                                        </div>
-                                                                                        <div class="col-lg-2 col-md-2 col-sm-6 col-xs-6 othercol">
-                                                                                        <div class="ArtItem">
-                                                                                                <div class="image">
-                                                                                                    <img src="assets/images/categories/polo-shirt.jpg">
-                                                                                                </div>
-                                                                                            </div>
-                                                                                        </div>
-                                                                                        <div class="col-lg-2 col-md-2 col-sm-6 col-xs-6 othercol">
-                                                                                        <div class="ArtItem">
-                                                                                                <div class="image">
-                                                                                                    <img src="assets/images/categories/shirt.jpg">
-                                                                                                </div>
-                                                                                            </div>
-                                                                                        </div>
-                                                                                        <div class="col-lg-2 col-md-2 col-sm-6 col-xs-6 othercol">
-                                                                                        <div class="ArtItem">
-                                                                                                <div class="image">
-                                                                                                    <img src="assets/images/categories/t-shirt.jpg">
-                                                                                                </div>
-                                                                                            </div>
-                                                                                        </div>
-                                                                                        <div class="col-lg-2 col-md-2 col-sm-6 col-xs-6 othercol">
+                                                                                        <div
+                                                                                            class="col-lg-2 col-md-2 col-sm-6 col-xs-6 othercol">
                                                                                             <div class="ArtItem">
                                                                                                 <div class="image">
-                                                                                                    <img src="assets/images/categories/dress.jpg">
+                                                                                                    <img
+                                                                                                        src="assets/images/categories/jeans.jpg">
                                                                                                 </div>
                                                                                             </div>
                                                                                         </div>
-                                                                                        
-                                                                                        <div class="col-lg-2 col-md-2 col-sm-6 col-xs-6 othercol">
+                                                                                        <div
+                                                                                            class="col-lg-2 col-md-2 col-sm-6 col-xs-6 othercol">
                                                                                             <div class="ArtItem">
                                                                                                 <div class="image">
-                                                                                                    <img src="assets/images/categories/jackets.jpg">
+                                                                                                    <img
+                                                                                                        src="assets/images/categories/polo-shirt.jpg">
                                                                                                 </div>
                                                                                             </div>
                                                                                         </div>
-                                                                                        <div class="col-lg-2 col-md-2 col-sm-6 col-xs-6 othercol">
-                                                                                        <div class="ArtItem">
+                                                                                        <div
+                                                                                            class="col-lg-2 col-md-2 col-sm-6 col-xs-6 othercol">
+                                                                                            <div class="ArtItem">
                                                                                                 <div class="image">
-                                                                                                    <img src="assets/images/categories/jeans.jpg">
+                                                                                                    <img
+                                                                                                        src="assets/images/categories/shirt.jpg">
                                                                                                 </div>
                                                                                             </div>
                                                                                         </div>
-                                                                                        <div class="col-lg-2 col-md-2 col-sm-6 col-xs-6 othercol">
-                                                                                        <div class="ArtItem">
+                                                                                        <div
+                                                                                            class="col-lg-2 col-md-2 col-sm-6 col-xs-6 othercol">
+                                                                                            <div class="ArtItem">
                                                                                                 <div class="image">
-                                                                                                    <img src="assets/images/categories/polo-shirt.jpg">
+                                                                                                    <img
+                                                                                                        src="assets/images/categories/t-shirt.jpg">
                                                                                                 </div>
                                                                                             </div>
                                                                                         </div>
-                                                                                        <div class="col-lg-2 col-md-2 col-sm-6 col-xs-6 othercol">
-                                                                                        <div class="ArtItem">
+                                                                                        <div
+                                                                                            class="col-lg-2 col-md-2 col-sm-6 col-xs-6 othercol">
+                                                                                            <div class="ArtItem">
                                                                                                 <div class="image">
-                                                                                                    <img src="assets/images/categories/shirt.jpg">
+                                                                                                    <img
+                                                                                                        src="assets/images/categories/dress.jpg">
                                                                                                 </div>
                                                                                             </div>
                                                                                         </div>
-                                                                                        <div class="col-lg-2 col-md-2 col-sm-6 col-xs-6 othercol">
-                                                                                        <div class="ArtItem">
+
+                                                                                        <div
+                                                                                            class="col-lg-2 col-md-2 col-sm-6 col-xs-6 othercol">
+                                                                                            <div class="ArtItem">
                                                                                                 <div class="image">
-                                                                                                    <img src="assets/images/categories/t-shirt.jpg">
+                                                                                                    <img
+                                                                                                        src="assets/images/categories/jackets.jpg">
                                                                                                 </div>
                                                                                             </div>
                                                                                         </div>
-                                                                                        
-                                                                                        
+                                                                                        <div
+                                                                                            class="col-lg-2 col-md-2 col-sm-6 col-xs-6 othercol">
+                                                                                            <div class="ArtItem">
+                                                                                                <div class="image">
+                                                                                                    <img
+                                                                                                        src="assets/images/categories/jeans.jpg">
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                        <div
+                                                                                            class="col-lg-2 col-md-2 col-sm-6 col-xs-6 othercol">
+                                                                                            <div class="ArtItem">
+                                                                                                <div class="image">
+                                                                                                    <img
+                                                                                                        src="assets/images/categories/polo-shirt.jpg">
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                        <div
+                                                                                            class="col-lg-2 col-md-2 col-sm-6 col-xs-6 othercol">
+                                                                                            <div class="ArtItem">
+                                                                                                <div class="image">
+                                                                                                    <img
+                                                                                                        src="assets/images/categories/shirt.jpg">
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                        <div
+                                                                                            class="col-lg-2 col-md-2 col-sm-6 col-xs-6 othercol">
+                                                                                            <div class="ArtItem">
+                                                                                                <div class="image">
+                                                                                                    <img
+                                                                                                        src="assets/images/categories/t-shirt.jpg">
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
+
+
                                                                                     </div>
-                                                                                    
-                                                                                    
+
+
                                                                                 </div>
                                                                             </div>
-                                                                        
+
                                                                         </div>
                                                                     </div>
                                                                 </div>
-                                                                
+
                                                                 <div class="accordion-item">
-                                                                    <h2 class="accordion-header" id="flush-heading_AddDesign_2">
-                                                                        <button class="accordion-button fw-medium collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse_AddDesign_2" aria-expanded="false" aria-controls="flush-collapse_AddDesign_2">
+                                                                    <h2 class="accordion-header"
+                                                                        id="flush-heading_AddDesign_2">
+                                                                        <button
+                                                                            class="accordion-button fw-medium collapsed"
+                                                                            type="button" data-bs-toggle="collapse"
+                                                                            data-bs-target="#flush-collapse_AddDesign_2"
+                                                                            aria-expanded="false"
+                                                                            aria-controls="flush-collapse_AddDesign_2">
                                                                             <h3>
-                                                                                <span class="UpperTitle">Upload Images </span>
-                                                                                <span class="DowenTitle">Upload your own photo or logo</span>
+                                                                                <span class="UpperTitle">Upload Images
+                                                                                </span>
+                                                                                <span class="DowenTitle">Upload your own
+                                                                                    photo or logo</span>
                                                                             </h3>
                                                                         </button>
                                                                     </h2>
-                                                                    <div id="flush-collapse_AddDesign_2" class="accordion-collapse collapse" aria-labelledby="flush-heading_AddDesign_2" data-bs-parent="#accordionAddDesign_2">
+                                                                    <div id="flush-collapse_AddDesign_2"
+                                                                        class="accordion-collapse collapse"
+                                                                        aria-labelledby="flush-heading_AddDesign_2"
+                                                                        data-bs-parent="#accordionAddDesign_2">
                                                                         <div class="accordion-body text-muted">
                                                                             <div class="AcordyBodyInputs">
                                                                                 <div class="form_group">
                                                                                     <label>Upload Image</label>
-                                                                                    <input type="file" class="form-control" placeholder="upload image">
+                                                                                    <input type="file"
+                                                                                        id="tshirt-custompicture"
+                                                                                        class="form-control"
+                                                                                        placeholder="upload image">
                                                                                 </div>
                                                                             </div>
                                                                         </div>
                                                                     </div>
                                                                 </div>
-                                                                
+
                                                                 <div class="accordion-item">
-                                                                    <h2 class="accordion-header" id="flush-heading_AddDesign_3">
-                                                                        <button class="accordion-button fw-medium collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse_AddDesign_3" aria-expanded="false" aria-controls="flush-collapse_AddDesign_3">
+                                                                    <h2 class="accordion-header"
+                                                                        id="flush-heading_AddDesign_3">
+                                                                        <button
+                                                                            class="accordion-button fw-medium collapsed"
+                                                                            type="button" data-bs-toggle="collapse"
+                                                                            data-bs-target="#flush-collapse_AddDesign_3"
+                                                                            aria-expanded="false"
+                                                                            aria-controls="flush-collapse_AddDesign_3">
                                                                             <h3>
-                                                                                <span class="UpperTitle">My Images </span>
-                                                                                <span class="DowenTitle">Choose from your saved images</span>
+                                                                                <span class="UpperTitle">My Images
+                                                                                </span>
+                                                                                <span class="DowenTitle">Choose from
+                                                                                    your saved images</span>
                                                                             </h3>
                                                                         </button>
                                                                     </h2>
-                                                                    <div id="flush-collapse_AddDesign_3" class="accordion-collapse collapse" aria-labelledby="flush-heading_AddDesign_3" data-bs-parent="#accordionAddDesign_3">
+                                                                    <div id="flush-collapse_AddDesign_3"
+                                                                        class="accordion-collapse collapse"
+                                                                        aria-labelledby="flush-heading_AddDesign_3"
+                                                                        data-bs-parent="#accordionAddDesign_3">
                                                                         <div class="accordion-body text-muted">
                                                                             <div class="AcordyBodyInputs">
                                                                                 <div class="ClipArts">
-                                                                                    
-                                                                                    
+
+
                                                                                     <div class="row otherrow">
-                                                                                        <div class="col-lg-2 col-md-2 col-sm-6 col-xs-6 othercol">
+                                                                                        <div
+                                                                                            class="col-lg-2 col-md-2 col-sm-6 col-xs-6 othercol">
                                                                                             <div class="ArtItem">
                                                                                                 <div class="image">
-                                                                                                    <img src="assets/images/categories/dress.jpg">
+                                                                                                    <img
+                                                                                                        src="assets/images/categories/dress.jpg">
                                                                                                 </div>
                                                                                             </div>
                                                                                         </div>
-                                                                                        
-                                                                                        <div class="col-lg-2 col-md-2 col-sm-6 col-xs-6 othercol">
+
+                                                                                        <div
+                                                                                            class="col-lg-2 col-md-2 col-sm-6 col-xs-6 othercol">
                                                                                             <div class="ArtItem">
                                                                                                 <div class="image">
-                                                                                                    <img src="assets/images/categories/jackets.jpg">
+                                                                                                    <img
+                                                                                                        src="assets/images/categories/jackets.jpg">
                                                                                                 </div>
                                                                                             </div>
                                                                                         </div>
-                                                                                        <div class="col-lg-2 col-md-2 col-sm-6 col-xs-6 othercol">
-                                                                                        <div class="ArtItem">
-                                                                                                <div class="image">
-                                                                                                    <img src="assets/images/categories/jeans.jpg">
-                                                                                                </div>
-                                                                                            </div>
-                                                                                        </div>
-                                                                                        <div class="col-lg-2 col-md-2 col-sm-6 col-xs-6 othercol">
-                                                                                        <div class="ArtItem">
-                                                                                                <div class="image">
-                                                                                                    <img src="assets/images/categories/polo-shirt.jpg">
-                                                                                                </div>
-                                                                                            </div>
-                                                                                        </div>
-                                                                                        <div class="col-lg-2 col-md-2 col-sm-6 col-xs-6 othercol">
-                                                                                        <div class="ArtItem">
-                                                                                                <div class="image">
-                                                                                                    <img src="assets/images/categories/shirt.jpg">
-                                                                                                </div>
-                                                                                            </div>
-                                                                                        </div>
-                                                                                        <div class="col-lg-2 col-md-2 col-sm-6 col-xs-6 othercol">
-                                                                                        <div class="ArtItem">
-                                                                                                <div class="image">
-                                                                                                    <img src="assets/images/categories/t-shirt.jpg">
-                                                                                                </div>
-                                                                                            </div>
-                                                                                        </div>
-                                                                                        <div class="col-lg-2 col-md-2 col-sm-6 col-xs-6 othercol">
+                                                                                        <div
+                                                                                            class="col-lg-2 col-md-2 col-sm-6 col-xs-6 othercol">
                                                                                             <div class="ArtItem">
                                                                                                 <div class="image">
-                                                                                                    <img src="assets/images/categories/dress.jpg">
+                                                                                                    <img
+                                                                                                        src="assets/images/categories/jeans.jpg">
                                                                                                 </div>
                                                                                             </div>
                                                                                         </div>
-                                                                                        
-                                                                                        <div class="col-lg-2 col-md-2 col-sm-6 col-xs-6 othercol">
+                                                                                        <div
+                                                                                            class="col-lg-2 col-md-2 col-sm-6 col-xs-6 othercol">
                                                                                             <div class="ArtItem">
                                                                                                 <div class="image">
-                                                                                                    <img src="assets/images/categories/jackets.jpg">
+                                                                                                    <img
+                                                                                                        src="assets/images/categories/polo-shirt.jpg">
                                                                                                 </div>
                                                                                             </div>
                                                                                         </div>
-                                                                                        <div class="col-lg-2 col-md-2 col-sm-6 col-xs-6 othercol">
-                                                                                        <div class="ArtItem">
+                                                                                        <div
+                                                                                            class="col-lg-2 col-md-2 col-sm-6 col-xs-6 othercol">
+                                                                                            <div class="ArtItem">
                                                                                                 <div class="image">
-                                                                                                    <img src="assets/images/categories/jeans.jpg">
+                                                                                                    <img
+                                                                                                        src="assets/images/categories/shirt.jpg">
                                                                                                 </div>
                                                                                             </div>
                                                                                         </div>
-                                                                                        <div class="col-lg-2 col-md-2 col-sm-6 col-xs-6 othercol">
-                                                                                        <div class="ArtItem">
+                                                                                        <div
+                                                                                            class="col-lg-2 col-md-2 col-sm-6 col-xs-6 othercol">
+                                                                                            <div class="ArtItem">
                                                                                                 <div class="image">
-                                                                                                    <img src="assets/images/categories/polo-shirt.jpg">
+                                                                                                    <img
+                                                                                                        src="assets/images/categories/t-shirt.jpg">
                                                                                                 </div>
                                                                                             </div>
                                                                                         </div>
-                                                                                        <div class="col-lg-2 col-md-2 col-sm-6 col-xs-6 othercol">
-                                                                                        <div class="ArtItem">
+                                                                                        <div
+                                                                                            class="col-lg-2 col-md-2 col-sm-6 col-xs-6 othercol">
+                                                                                            <div class="ArtItem">
                                                                                                 <div class="image">
-                                                                                                    <img src="assets/images/categories/shirt.jpg">
+                                                                                                    <img
+                                                                                                        src="assets/images/categories/dress.jpg">
                                                                                                 </div>
                                                                                             </div>
                                                                                         </div>
-                                                                                        <div class="col-lg-2 col-md-2 col-sm-6 col-xs-6 othercol">
-                                                                                        <div class="ArtItem">
+
+                                                                                        <div
+                                                                                            class="col-lg-2 col-md-2 col-sm-6 col-xs-6 othercol">
+                                                                                            <div class="ArtItem">
                                                                                                 <div class="image">
-                                                                                                    <img src="assets/images/categories/t-shirt.jpg">
+                                                                                                    <img
+                                                                                                        src="assets/images/categories/jackets.jpg">
                                                                                                 </div>
                                                                                             </div>
                                                                                         </div>
-                                                                                        
-                                                                                        
+                                                                                        <div
+                                                                                            class="col-lg-2 col-md-2 col-sm-6 col-xs-6 othercol">
+                                                                                            <div class="ArtItem">
+                                                                                                <div class="image">
+                                                                                                    <img
+                                                                                                        src="assets/images/categories/jeans.jpg">
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                        <div
+                                                                                            class="col-lg-2 col-md-2 col-sm-6 col-xs-6 othercol">
+                                                                                            <div class="ArtItem">
+                                                                                                <div class="image">
+                                                                                                    <img
+                                                                                                        src="assets/images/categories/polo-shirt.jpg">
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                        <div
+                                                                                            class="col-lg-2 col-md-2 col-sm-6 col-xs-6 othercol">
+                                                                                            <div class="ArtItem">
+                                                                                                <div class="image">
+                                                                                                    <img
+                                                                                                        src="assets/images/categories/shirt.jpg">
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                        <div
+                                                                                            class="col-lg-2 col-md-2 col-sm-6 col-xs-6 othercol">
+                                                                                            <div class="ArtItem">
+                                                                                                <div class="image">
+                                                                                                    <img
+                                                                                                        src="assets/images/categories/t-shirt.jpg">
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
+
+
                                                                                     </div>
-                                                                                    
-                                                                                    
+
+
                                                                                 </div>
                                                                             </div>
-                                                                        
+
                                                                         </div>
                                                                     </div>
                                                                 </div>
-                                                                
+
                                                                 <div class="accordion-item">
-                                                                    <h2 class="accordion-header" id="flush-heading_AddDesign_4">
-                                                                        <button class="accordion-button fw-medium collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse_AddDesign_4" aria-expanded="false" aria-controls="flush-collapse_AddDesign_4">
+                                                                    <h2 class="accordion-header"
+                                                                        id="flush-heading_AddDesign_4">
+                                                                        <button
+                                                                            class="accordion-button fw-medium collapsed"
+                                                                            type="button" data-bs-toggle="collapse"
+                                                                            data-bs-target="#flush-collapse_AddDesign_4"
+                                                                            aria-expanded="false"
+                                                                            aria-controls="flush-collapse_AddDesign_4">
                                                                             <h3>
-                                                                                <span class="UpperTitle">Add Image From Facebook </span>
-                                                                                
+                                                                                <span class="UpperTitle">Add Image From
+                                                                                    Facebook </span>
+
                                                                             </h3>
                                                                         </button>
                                                                     </h2>
-                                                                    <div id="flush-collapse_AddDesign_4" class="accordion-collapse collapse" aria-labelledby="flush-heading_AddDesign_4" data-bs-parent="#accordionAddDesign_4">
+                                                                    <div id="flush-collapse_AddDesign_4"
+                                                                        class="accordion-collapse collapse"
+                                                                        aria-labelledby="flush-heading_AddDesign_4"
+                                                                        data-bs-parent="#accordionAddDesign_4">
                                                                         <div class="accordion-body text-muted">
                                                                             <div class="AcordyBodyInputs">
                                                                                 <div class="form_group">
                                                                                     <label>Facebook Link</label>
-                                                                                    <input type="text" class="form-control" placeholder="">
+                                                                                    <input type="text"
+                                                                                        class="form-control"
+                                                                                        placeholder="">
                                                                                 </div>
                                                                             </div>
                                                                         </div>
                                                                     </div>
                                                                 </div>
                                                                 <div class="accordion-item">
-                                                                    <h2 class="accordion-header" id="flush-heading_AddDesign_5">
-                                                                        <button class="accordion-button fw-medium collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse_AddDesign_5" aria-expanded="false" aria-controls="flush-collapse_AddDesign_5">
+                                                                    <h2 class="accordion-header"
+                                                                        id="flush-heading_AddDesign_5">
+                                                                        <button
+                                                                            class="accordion-button fw-medium collapsed"
+                                                                            type="button" data-bs-toggle="collapse"
+                                                                            data-bs-target="#flush-collapse_AddDesign_5"
+                                                                            aria-expanded="false"
+                                                                            aria-controls="flush-collapse_AddDesign_5">
                                                                             <h3>
-                                                                                <span class="UpperTitle">Add Image From Instagram </span>
-                                                                                
+                                                                                <span class="UpperTitle">Add Image From
+                                                                                    Instagram </span>
+
                                                                             </h3>
                                                                         </button>
                                                                     </h2>
-                                                                    <div id="flush-collapse_AddDesign_5" class="accordion-collapse collapse" aria-labelledby="flush-heading_AddDesign_5" data-bs-parent="#accordionAddDesign_5">
+                                                                    <div id="flush-collapse_AddDesign_5"
+                                                                        class="accordion-collapse collapse"
+                                                                        aria-labelledby="flush-heading_AddDesign_5"
+                                                                        data-bs-parent="#accordionAddDesign_5">
                                                                         <div class="accordion-body text-muted">
                                                                             <div class="AcordyBodyInputs">
                                                                                 <div class="form_group">
                                                                                     <label>Instagram Link</label>
-                                                                                    <input type="text" class="form-control" placeholder="">
+                                                                                    <input type="text"
+                                                                                        class="form-control"
+                                                                                        placeholder="">
                                                                                 </div>
                                                                             </div>
                                                                         </div>
                                                                     </div>
                                                                 </div>
                                                                 <div class="accordion-item">
-                                                                    <h2 class="accordion-header" id="flush-heading_AddDesign_6">
-                                                                        <button class="accordion-button fw-medium collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse_AddDesign_6" aria-expanded="false" aria-controls="flush-collapse_AddDesign_6">
+                                                                    <h2 class="accordion-header"
+                                                                        id="flush-heading_AddDesign_6">
+                                                                        <button
+                                                                            class="accordion-button fw-medium collapsed"
+                                                                            type="button" data-bs-toggle="collapse"
+                                                                            data-bs-target="#flush-collapse_AddDesign_6"
+                                                                            aria-expanded="false"
+                                                                            aria-controls="flush-collapse_AddDesign_6">
                                                                             <h3>
-                                                                                <span class="UpperTitle">Collection Print </span>
-                                                                                
+                                                                                <span class="UpperTitle">Collection
+                                                                                    Print </span>
+
                                                                             </h3>
                                                                         </button>
                                                                     </h2>
-                                                                    <div id="flush-collapse_AddDesign_6" class="accordion-collapse collapse" aria-labelledby="flush-heading_AddDesign_6" data-bs-parent="#accordionAddDesign_6">
+                                                                    <div id="flush-collapse_AddDesign_6"
+                                                                        class="accordion-collapse collapse"
+                                                                        aria-labelledby="flush-heading_AddDesign_6"
+                                                                        data-bs-parent="#accordionAddDesign_6">
                                                                         <div class="accordion-body text-muted">
                                                                             <div class="p-3">
-                                                                                <button type="button" class="CollectionPrint">Collection Print</button>
+                                                                                <button type="button"
+                                                                                    class="CollectionPrint">Collection
+                                                                                    Print</button>
                                                                             </div>
                                                                         </div>
                                                                     </div>
                                                                 </div>
-                                                                
-                                                              </div>
+
+                                                            </div>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -799,108 +1169,169 @@
                                                             <div class="TextOptions">
                                                                 <div class="elementItem">
                                                                     <div class="IconTitle">
-                                                                        <img src="assets/images/NewImages/icons/fontType.png">
+                                                                        <img
+                                                                            src="assets/images/NewImages/icons/fontType.png">
                                                                         <span>Font</span>
                                                                     </div>
                                                                     <div class="InputElement">
-                                                                        <select class="SelectInput">
-                                                                            <option style="font-family: cursive">cursive</option>
-                                                                            <option style="font-family:fantasy">fantasy</option>
-                                                                            <option style="font-family:inherit">inherit</option>
-                                                                            <option style="font-family:monospace">monospace</option>
-                                                                            <option style="font-family:sans-serif">sans-serif</option>
+                                                                        <select class="SelectInput"
+                                                                        onchange="changeFontFamily(this.value)"
+                                                                        >
+                                                                            <option style="font-family: cursive" value="cursive">cursive
+                                                                            </option>
+                                                                            <option style="font-family:fantasy"  value="fantasy">fantasy
+                                                                            </option>
+                                                                            <option style="font-family:inherit"  value="inherit">inherit
+                                                                            </option>
+                                                                            <option style="font-family:monospace"  value="monospace">
+                                                                                monospace</option>
+                                                                            <option style="font-family:sans-serif"  value="sans-serif">
+                                                                                sans-serif</option>
                                                                         </select>
+
+                                                                        
                                                                     </div>
                                                                 </div>
-                                                                
+                                                                <div class="elementItem" style="justify-content: space-evenly">
+                                                                    <!-- fontcolor , bordercolor, shadowcolor -->
+                                                                    <div class="IconTitle">
+                                                                        <span style="color: #068b8e;">font color</span>
+
+                                                                    </div>
+                                                                    <div class="inputElement">
+                                                                        <input type="color" name="" id="" oninput="changeFontColor(this.value)">
+                                                                    </div>
+                                                                    <div class="IconTitle">
+                                                                        <span style="color: #068b8e;">border color</span>
+
+                                                                    </div>
+                                                                    <div class="inputElement">
+                                                                        <input type="color" name="" id=""  oninput="changeBorderColor(this.value)">
+                                                                    </div>                                                             
+                                                                </div>
+
                                                                 <div class="elementItem">
                                                                     <div class="IconTitle">
-                                                                        <img src="assets/images/NewImages/icons/fontSize.png">
+                                                                        <img
+                                                                            src="assets/images/NewImages/icons/fontSize.png">
                                                                         <span>text Size</span>
                                                                     </div>
                                                                     <div class="InputElement">
                                                                         <div class="InputRange">
-                                                                            <input type="text" id="range_Size">
+                                                                        
+                                                                            <input type="text" id="range_Size"
+                                                                            onchange="changeFontSize(this.value)"
+                                                                            >
                                                                         </div>
                                                                     </div>
                                                                 </div>
-                                                                
+
                                                                 <div class="elementItem">
                                                                     <div class="IconTitle">
-                                                                        <img src="assets/images/NewImages/icons/blur.png">
-                                                                        <span>blur</span>
+                                                                        <img
+                                                                            src="assets/images/NewImages/icons/blur.png"
+                                                                            
+                                                                            >
+                                                                        <span>Space</span>
                                                                     </div>
                                                                     <div class="InputElement">
                                                                         <div class="InputRange">
-                                                                            <input type="text" id="range_blur">
+                                                                            <input type="text" id="range_blur"
+                                                                            onchange="changeTextLetterSpace(this.value)">
                                                                         </div>
                                                                     </div>
                                                                 </div>
                                                                 <div class="elementItem">
                                                                     <div class="IconTitle">
-                                                                        <img src="assets/images/NewImages/icons/color-picker.png">
-                                                                        <span>picker</span>
+                                                                        <i class="fa fa-rotate-270" ></i>
+                                                                        <span>rotate</span>
                                                                     </div>
                                                                     <div class="InputElement">
                                                                         <div class="InputRange">
-                                                                            <input type="text" id="range_picker">
+                                                                            <input type="text" id="range_picker" min="0" max="360"
+                                                                            onchange="changeTextRotate(this.value)"
+                                                                            >
                                                                         </div>
                                                                     </div>
                                                                 </div>
                                                                 <div class="elementItem">
                                                                     <div class="IconTitle">
-                                                                        <img src="assets/images/NewImages/icons/menu.png">
+                                                                        <img
+                                                                            src="assets/images/NewImages/icons/menu.png">
                                                                         <span>weigt</span>
                                                                     </div>
                                                                     <div class="InputElement">
                                                                         <div class="InputRange">
-                                                                            <input type="text" id="range_weigt">
+                                                                            <input type="text" id="range_weigt"
+                                                                            onchange="changeFontWeight(this.value)"
+                                                                            >
                                                                         </div>
                                                                     </div>
                                                                 </div>
                                                                 <div class="DowenSection">
                                                                     <div class="elementItem_Solo">
-                                                                        <div class="IconTitle">
-                                                                            <img src="assets/images/NewImages/icons/copy-two-paper-sheets-interface-symbol.png">
+                                                                        <div class="IconTitle"
+                                                                        onclick="copy()"
+                                                                        >
+                                                                            <img
+                                                                                src="assets/images/NewImages/icons/copy-two-paper-sheets-interface-symbol.png">
                                                                             <span>copy</span>
                                                                         </div>
                                                                     </div>
                                                                     <div class="elementItem_Solo">
-                                                                        <div class="IconTitle">
-                                                                            <img src="assets/images/NewImages/icons/semicircle.png">
-                                                                            <span>curve</span>
+                                                                        <div class="IconTitle"
+                                                                        onclick="changeUnderline()"
+                                                                        >
+                                                                        
+                                                                                <i class="fa fa-underline fa-x"  style="color: #068b8e;"></i>
+                                                                            <span>underline</span>
                                                                         </div>
                                                                     </div>
                                                                     <div class="elementItem_Solo">
                                                                         <div class="IconTitle">
-                                                                            <img src="assets/images/NewImages/icons/italic.png">
+                                                                            <img
+                                                                                src="assets/images/NewImages/icons/italic.png"
+                                                                                onclick="changeItalic()"
+                                                                                >
                                                                             <span>italic</span>
                                                                         </div>
                                                                     </div>
                                                                     <div class="elementItem_Solo">
-                                                                        <div class="IconTitle">
-                                                                            <img src="assets/images/NewImages/icons/paste.png">
+                                                                        <div class="IconTitle"
+                                                                        onclick="paste()"
+                                                                        >
+                                                                            <img
+                                                                                src="assets/images/NewImages/icons/paste.png">
                                                                             <span>paste</span>
                                                                         </div>
                                                                     </div>
                                                                     <div class="elementItem_Solo">
                                                                         <div class="IconTitle">
-                                                                            <img src="assets/images/NewImages/icons/b.png">
+                                                                            <img
+                                                                                src="assets/images/NewImages/icons/b.png"
+                                                                                onclick="changeBold()"
+                                                                                >
+
                                                                             <span>bold</span>
                                                                         </div>
                                                                     </div>
                                                                     <div class="elementItem_Solo">
-                                                                        <div class="IconTitle">
-                                                                            <img src="assets/images/NewImages/icons/cut.png">
+                                                                        <div class="IconTitle"
+                                                                        onclick="cut()"
+                                                                        >
+                                                                            <img
+                                                                                src="assets/images/NewImages/icons/cut.png">
                                                                             <span>cut</span>
                                                                         </div>
                                                                     </div>
-                                                                    
+
                                                                     <div class="TextAreaBox">
-                                                                        <textarea placeholder="TEXT"></textarea>
+                                                                        <textarea placeholder="TEXT" id="text-input"></textarea>
                                                                     </div>
                                                                     <div class="AddBUTTON">
-                                                                        <button type="button" class="AddBTN">Add</button>
+                                                                        <button type="button"
+                                                                            onclick="addText()"
+                                                                            class="AddBTN">Add</button>
                                                                     </div>
                                                                 </div>
                                                             </div>
@@ -914,70 +1345,107 @@
                                                             <span>Select an option</span>
                                                         </div>
                                                         <div class="AddDesignBodyTap">
-                                                            <div class="accordion accordion-flush" id="accordionSave_Load">
-                                                                
-                                                               
+                                                            <div class="accordion accordion-flush"
+                                                                id="accordionSave_Load">
+
+
                                                                 <div class="accordion-item">
-                                                                    <h2 class="accordion-header" id="flush-heading_Save_Load_1">
-                                                                        <button class="accordion-button fw-medium collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse_Save_Load_1" aria-expanded="false" aria-controls="flush-collapse_Save_Load_1">
+                                                                    <h2 class="accordion-header"
+                                                                        id="flush-heading_Save_Load_1">
+                                                                        <button
+                                                                            class="accordion-button fw-medium collapsed"
+                                                                            type="button" data-bs-toggle="collapse"
+                                                                            data-bs-target="#flush-collapse_Save_Load_1"
+                                                                            aria-expanded="false"
+                                                                            aria-controls="flush-collapse_Save_Load_1">
                                                                             <h3>
-                                                                                <span class="UpperTitle">Name your design and click save </span>
-                                                                                
+                                                                                <span class="UpperTitle">Name your
+                                                                                    design and click save </span>
+
                                                                             </h3>
                                                                         </button>
                                                                     </h2>
-                                                                    <div id="flush-collapse_Save_Load_1" class="accordion-collapse collapse" aria-labelledby="flush-heading_Save_Load_1" data-bs-parent="#accordionSave_Load_1">
+                                                                    <div id="flush-collapse_Save_Load_1"
+                                                                        class="accordion-collapse collapse"
+                                                                        aria-labelledby="flush-heading_Save_Load_1"
+                                                                        data-bs-parent="#accordionSave_Load_1">
                                                                         <div class="accordion-body text-muted">
                                                                             <div class="AcordyBodyInputs">
                                                                                 <div class="form_group">
-                                                                                    
-                                                                                    <input type="text" class="form-control" placeholder="Text ">
+
+                                                                                    <input type="text"
+                                                                                        class="form-control"
+                                                                                        placeholder="Text ">
                                                                                 </div>
                                                                             </div>
                                                                         </div>
                                                                     </div>
                                                                 </div>
-                                                                
-                                                          
-                                                                
-                                                                
+
+
+
+
                                                                 <div class="accordion-item">
-                                                                    <h2 class="accordion-header" id="flush-heading_Save_Load_2">
-                                                                        <button class="accordion-button fw-medium collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse_Save_Load_2" aria-expanded="false" aria-controls="flush-collapse_Save_Load_2">
+                                                                    <h2 class="accordion-header"
+                                                                        id="flush-heading_Save_Load_2">
+                                                                        <button
+                                                                            class="accordion-button fw-medium collapsed"
+                                                                            type="button" data-bs-toggle="collapse"
+                                                                            data-bs-target="#flush-collapse_Save_Load_2"
+                                                                            aria-expanded="false"
+                                                                            aria-controls="flush-collapse_Save_Load_2">
                                                                             <h3>
-                                                                                <span class="UpperTitle">Save Design</span>
-                                                                                
+                                                                                <span class="UpperTitle">Save
+                                                                                    Design</span>
+
                                                                             </h3>
                                                                         </button>
                                                                     </h2>
-                                                                    <div id="flush-collapse_Save_Load_2" class="accordion-collapse collapse" aria-labelledby="flush-heading_Save_Load_2" data-bs-parent="#accordionSave_Load_2">
+                                                                    <div id="flush-collapse_Save_Load_2"
+                                                                        class="accordion-collapse collapse"
+                                                                        aria-labelledby="flush-heading_Save_Load_2"
+                                                                        data-bs-parent="#accordionSave_Load_2">
                                                                         <div class="accordion-body text-muted">
                                                                             <div class="p-3">
-                                                                                <button type="button" class="CollectionPrint">Save Design </button>
+                                                                                <button type="button"
+                                                                                    class="CollectionPrint">Save Design
+                                                                                </button>
                                                                             </div>
                                                                         </div>
                                                                     </div>
                                                                 </div>
-                                                                
+
                                                                 <div class="accordion-item">
-                                                                    <h2 class="accordion-header" id="flush-heading_Save_Load_3">
-                                                                        <button class="accordion-button fw-medium collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse_Save_Load_3" aria-expanded="false" aria-controls="flush-collapse_Save_Load_3">
+                                                                    <h2 class="accordion-header"
+                                                                        id="flush-heading_Save_Load_3">
+                                                                        <button
+                                                                            class="accordion-button fw-medium collapsed"
+                                                                            type="button" data-bs-toggle="collapse"
+                                                                            data-bs-target="#flush-collapse_Save_Load_3"
+                                                                            aria-expanded="false"
+                                                                            aria-controls="flush-collapse_Save_Load_3">
                                                                             <h3>
-                                                                                <span class="UpperTitle">Load Design</span>
-                                                                                
+                                                                                <span class="UpperTitle">Load
+                                                                                    Design</span>
+
                                                                             </h3>
                                                                         </button>
                                                                     </h2>
-                                                                    <div id="flush-collapse_Save_Load_3" class="accordion-collapse collapse" aria-labelledby="flush-heading_Save_Load_3" data-bs-parent="#accordionSave_Load_3">
+                                                                    <div id="flush-collapse_Save_Load_3"
+                                                                        class="accordion-collapse collapse"
+                                                                        aria-labelledby="flush-heading_Save_Load_3"
+                                                                        data-bs-parent="#accordionSave_Load_3">
                                                                         <div class="accordion-body text-muted">
                                                                             <div class="p-3">
-                                                                                <button type="button" class="CollectionPrint">Load Design </button>
+                                                                                <button type="button"
+                                                                                    class="CollectionPrint">Load Design
+                                                                                </button>
                                                                             </div>
                                                                         </div>
                                                                     </div>
                                                                 </div>
-                                                                
-                                                              </div>
+
+                                                            </div>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -991,38 +1459,14 @@
                                                         farm-to-table.
                                                     </p>
                                                 </div>
+                                            </div>
+
                                         </div>
-        
-                                        </div>
-                                       
+
                                     </div>
                                 </div>
-                                
 
-                                <label for="tshirt-design">T-Shirt Design:</label>
-                                <select id="tshirt-design">
-                                    <option value="">Select one of our designs ...</option>
-                                    <option
-                                        value="https://ourcodeworld.com/public-media/gallery/gallery-5d5b0e95d294c.png">
-                                        Batman</option>
-                                </select>
-
-                                <!-- The Select that allows the user to change the color of the T-Shirt -->
-                                <br><br>
-                                <label for="tshirt-color">T-Shirt Color:</label>
-                                <select id="tshirt-color">
-                                    <!-- You can add any color with a new option and definings its hex code -->
-                                    <option value="#fff">White</option>
-                                    <option value="#000">Black</option>
-                                    <option value="#f00">Red</option>
-                                    <option value="#008000">Green</option>
-                                    <option value="#ff0">Yellow</option>
-                                </select>
-
-                                <br><br>
-                                <label for="tshirt-custompicture">Upload your own design:</label>
-                                <input type="file" id="tshirt-custompicture" />
-
+                              
                             </div>
                         </div>
                     </div>
@@ -1036,6 +1480,46 @@
 
         </div>
     </div>
+
+
+
+
+
+
+    <div class="m-5 d-none">
+
+
+        <label for="tshirt-design">T-Shirt Design:</label>
+        <select id="tshirt-design">
+            <option value="">Select one of our designs ...</option>
+            <option
+                value="https://ourcodeworld.com/public-media/gallery/gallery-5d5b0e95d294c.png">
+                Batman</option>
+        </select>
+
+        <!-- The Select that allows the user to change the color of the T-Shirt -->
+        <br><br>
+        <label for="tshirt-color">T-Shirt Color:</label>
+        <select id="tshirt-color">
+            <!-- You can add any color with a new option and definings its hex code -->
+            <option value="#fff">White</option>
+            <option value="#000">Black</option>
+            <option value="#f00">Red</option>
+            <option value="#008000">Green</option>
+            <option value="#ff0">Yellow</option>
+        </select>
+
+        <br><br>
+        <label for="tshirt-custompicture">Upload your own design:</label>
+        <input type="file" id="tshirt-custompicture" />
+    </div>
+
+
+
+
+
+
+
 
 
 
@@ -1517,14 +2001,14 @@
     <script src="assets/js/bootstrap.bundle.min.js"></script>
     <script src="assets/libs/ion-rangeslider/js/ion.rangeSlider.min.js"></script>
     <script>
-        
-        
-        
+
+
+
         $(document).ready(function () {
-          $("#range_Size").ionRangeSlider({skin: "square", min: 0, max: 100, hide_min_max: true, step: 2, from: 14, postfix: "px" });
-          $("#range_blur").ionRangeSlider({skin: "square", min: 0, max: 100, hide_min_max: true, step: 1, from: 50, postfix: "" });
-          $("#range_picker").ionRangeSlider({skin: "square", min: 0, max: 100, hide_min_max: true, step: 1, from: 25, postfix: "" });
-          $("#range_weigt").ionRangeSlider({skin: "square", min: 0, max: 100, hide_min_max: true, step: 1, from: 10, postfix: "px" });
+            $("#range_Size").ionRangeSlider({ skin: "square", min: 0, max: 100, hide_min_max: true, step: 2, from: 14, postfix: "px" });
+            $("#range_blur").ionRangeSlider({ skin: "square", min: 0, max: 100, hide_min_max: true, step: 1, from: 50, postfix: "" });
+            $("#range_picker").ionRangeSlider({ skin: "square", min: 0, max: 100, hide_min_max: true, step: 1, from: 25, postfix: "" });
+            $("#range_weigt").ionRangeSlider({ skin: "square", min: 0, max: 100, hide_min_max: true, step: 1, from: 10, postfix: "px" });
 
         });
     </script>
@@ -1543,30 +2027,30 @@
 
     <script src="assets/js/custom.js"></script>
     <script>
-        $(document).ready(function() {
-          $('.ProItem').click(function() {
-            $('.ProItem').removeClass('active'); // Remove active class from all items
-            $(this).addClass('active'); // Add active class to the clicked item
-          });
+        $(document).ready(function () {
+            $('.ProItem').click(function () {
+                $('.ProItem').removeClass('active'); // Remove active class from all items
+                $(this).addClass('active'); // Add active class to the clicked item
+            });
         });
     </script>
     <script>
-        $(document).ready(function() {
-          $('.colorItem').click(function() {
-            $('.colorItem').removeClass('active'); // Remove active class from all items
-            $(this).addClass('active'); // Add active class to the clicked item
-          });
+        $(document).ready(function () {
+            $('.colorItem').click(function () {
+                $('.colorItem').removeClass('active'); // Remove active class from all items
+                $(this).addClass('active'); // Add active class to the clicked item
+            });
         });
     </script>
     <script>
-        $(document).ready(function() {
-          $('.ArtItem').click(function() {
-            $('.ArtItem').removeClass('active'); // Remove active class from all items
-            $(this).addClass('active'); // Add active class to the clicked item
-          });
+        $(document).ready(function () {
+            $('.ArtItem').click(function () {
+                $('.ArtItem').removeClass('active'); // Remove active class from all items
+                $(this).addClass('active'); // Add active class to the clicked item
+            });
         });
     </script>
-    
+
 </body>
 
 

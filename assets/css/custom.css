@@ -1,10 +1,10 @@
 .drawing-area {
 position: absolute;
-    top: 85px;
-    left: 25%;
+    top: 0;
+    left: 0%;
     z-index: 10;
-    width: 200px;
-    height: 370px;
+    width: 100%;
+    height: 100%;
     border: 1px dashed #068b8e;
   }
   
@@ -34,7 +34,11 @@ width: 80%;
     cursor: default;
   }
   
-#tshirt-canvas{
+#tshirt-canvas-front{
+    width: 100% !important;
+        height: 100% !important;
+}
+#tshirt-canvas-back{
     width: 100% !important;
         height: 100% !important;
 }
@@ -200,6 +204,11 @@ font-size: 12px;
 .CustomTapsDesign .ProductTap .accordion-body .ProductItems .ProItem.active image{
     
 }
+
+
+
+
+
 .CustomTapsDesign .ProductTap .accordion-body .ProductItems .ProItem .Image{
     display: flex;
     height: 110px;
@@ -223,7 +232,7 @@ font-size: 12px;
     margin-bottom: 15px;
 }
 .CustomTapsDesign .ProductTap .accordion-body .ProductColor .colorItem{
-        display: inline-block;
+    display: inline-block;
     width: 25px;
     height: 25px;
     text-align: center;
@@ -558,14 +567,7 @@ padding: 13px 10px;
     text-transform: uppercase;
 }
 
-
-
-
-
-
-
-
-
-
-
-
+/* image tag in class image take padding 20% */
+.Image{
+    padding: 20%;
+}
