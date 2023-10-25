@@ -16,7 +16,15 @@ position: absolute;
   }
   
   #tshirt-div {
-width: 80%;
+width: 100%;
+    margin: auto;
+    height: auto;
+    position: relative;
+    background-color: #fff;
+  }
+  
+  #tshirt-div-back{
+width: 100%;
     margin: auto;
     height: auto;
     position: relative;
@@ -571,3 +579,31 @@ padding: 13px 10px;
 .Image{
     padding: 20%;
 }
+
+.AllFornt_BackImages{
+    
+}
+.AllFornt_BackImages .product-tab-info{
+    margin-top: 30px;
+}
+.AllFornt_BackImages .product-tab-info .product-tab-info-link{
+    display: block;
+    width: 100px;
+    background: #fff;
+    border: 1px solid #edb003;
+    color: #212121;
+    margin: 0;
+    font-size: 15px;
+    height: 40px;
+    font-weight: 500;
+}
+.AllFornt_BackImages .product-tab-info .product-tab-info-link.active{
+    background: #edb003;
+    border: 1px solid #edb003;
+    color: #fff;
+}
+.AllFornt_BackImages .product-tab-info-link::after{
+    content: none;
+}
+
+
