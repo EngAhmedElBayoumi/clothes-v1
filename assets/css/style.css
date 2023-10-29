@@ -1764,6 +1764,14 @@ hr {
   display: block;
 }
 
+.clipart{
+  width: 100px !important;
+  height: 100px !important;
+}
+
+.site-content{
+  margin-bottom: 200px;
+}
 .product-card-style-1.product-card:hover .product-card-price {
   opacity: 1;
   transform: translateY(0px);
@@ -1794,6 +1802,16 @@ hr {
 .product-card-style-1 .product-card-box-cart:hover {
   background-color: #313030;
   color: #FFFFFF;
+}
+
+
+.contact-form-section {
+  /* white box shadow */
+  margin: 100px auto;
+  box-shadow: 20px 20px 20px 20px rgba(173, 171, 171, 0.1);
+
+  /*  center screen */
+  
 }
 
 .product-card-style-2.product-card:hover .product-card-price {

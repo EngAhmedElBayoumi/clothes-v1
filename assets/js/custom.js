@@ -2,31 +2,11 @@
 let canvas = new fabric.Canvas('tshirt-canvas-front');
 let canvasBack = new fabric.Canvas('tshirt-canvas-back');
 
-function updateTshirtImage(imageURL){
-    fabric.Image.fromURL(imageURL, function(img) {                   
-        img.scaleToHeight(300);
-        img.scaleToWidth(300); 
-        canvas.centerObject(img);
-        canvas.add(img);
-        canvas.renderAll();
-    });
-}
-function updateTshirtImage(imageURL){
-    fabric.Image.fromURL(imageURL, function(img) {                   
-        img.scaleToHeight(300);
-        img.scaleToWidth(300); 
-        canvasBack.centerObject(img);
-        canvasBack.add(img);
-        canvasBack.renderAll();
-    });
-}
-
 //fuction to change color
 function changeColor(color) {
     document.getElementById("tshirt-div").style.backgroundColor = color;
     document.getElementById("tshirt-div-back").style.backgroundColor = color;
 }
-
 
 //change image src function with name changetshirt
 function changetshirt(tshirtImage){
@@ -35,9 +15,21 @@ function changetshirt(tshirtImage){
     back=tshirtImage.replace("front","back");
     document.getElementById("tshirt-backgroundpicture").src = front;
     document.getElementById("tshirt-backgroundpicture-back").src = back;
-
 }
 
+let activecanvas=canvas;
+
+document.querySelectorAll(".product-tab-info-link").forEach(function(button) {
+    button.addEventListener("click", function() {
+        if (this.getAttribute("data-bs-target") === "#nav-description") {
+            console.log("Front tab is active");
+            activecanvas=canvas;
+        } else if (this.getAttribute("data-bs-target") === "#nav-additional-information") {
+            console.log("Back tab is active");
+            activecanvas=canvasBack;
+        }
+    });
+});
 
 
 
@@ -51,32 +43,66 @@ function addText(){
         fill: '#000000',
         fontSize: 20
     });
-    canvas.add(text);
-    canvas.setActiveObject(text);
+    activecanvas.add(text);
+    activecanvas.setActiveObject(text);
     text.bringToFront();
+    document.getElementById("text-input").value="";
+
 }
+
+//put selected text in input
+canvas.on('selection:created', function(options) {
+    document.getElementById("text-input").value=options.target.text;
+});
+
+// unset input when no text is selected
+canvas.on('selection:cleared', function(options) {
+    document.getElementById("text-input").value="";
+});
+
+canvasBack.on('selection:created', function(options) {
+    document.getElementById("text-input").value=options.target.text;
+});
+
+// unset input when no text is selected
+canvasBack.on('selection:cleared', function(options) {
+    document.getElementById("text-input").value="";
+});
+
+
+
+// text-input onkeyup change text
+document.getElementById("text-input").onkeyup = function() {
+    //check if text is selected
+    if(activecanvas.getActiveObject()){
+        activecanvas.getActiveObject().set("text", this.value);
+        activecanvas.renderAll();
+    }
+};
+
+
 
 //function to change font family
 function changeFontFamily(fontFamily){
-    canvas.getActiveObject().set("fontFamily", fontFamily);
-    canvas.renderAll();
+    activecanvas.getActiveObject().set("fontFamily", fontFamily);
+    activecanvas.renderAll();
 }
 
 //function to change font size
 function changeFontSize(fontSize){
-    canvas.getActiveObject().set("fontSize", fontSize);
-    canvas.renderAll();
+    activecanvas.getActiveObject().set("fontSize", fontSize);
+    activecanvas.renderAll();
 }
 
 //function to change font color
 function changeFontColor(fontColor){
-    canvas.getActiveObject().set("fill", fontColor);
-    canvas.renderAll();
+    activecanvas.getActiveObject().set("fill", fontColor);
+    activecanvas.renderAll();
 }
 // change border color  
 function changeBorderColor(borderColor){
-    canvas.getActiveObject().set("stroke", borderColor);
-    canvas.renderAll();
+    activecanvas.getActiveObject().set("stroke", borderColor);
+    activecanvas.renderAll();
 }
 
 function changeShadowColor(shadowColor) {
@@ -85,7 +111,7 @@ function changeShadowColor(shadowColor) {
         var shadow = activeObject.getShadow();
         shadow.color = shadowColor;
         activeObject.setShadow(shadow);
-        canvas.renderAll();
+        activecanvas.renderAll();
     }
 }
 
@@ -93,98 +119,133 @@ function changeShadowColor(shadowColor) {
 
 //function to change font style
 function changeFontStyle(fontStyle){
-    canvas.getActiveObject().set("fontStyle", fontStyle);
-    canvas.renderAll();
+    activecanvas.getActiveObject().set("fontStyle", fontStyle);
+    activecanvas.renderAll();
 }
 
 // change border color  
 function changeBorderColor(borderColor){
-    canvas.getActiveObject().set("stroke", borderColor);
-    canvas.renderAll();
+    activecanvas.getActiveObject().set("stroke", borderColor);
+    activecanvas.renderAll();
 }
 
 //function to change text leter space
 function changeTextLetterSpace(textLetterSpace){
-    canvas.getActiveObject().set("charSpacing", textLetterSpace);
-    canvas.renderAll();
+    activecanvas.getActiveObject().set("charSpacing", textLetterSpace);
+    activecanvas.renderAll();
 }
 
 // function to change text to bold and unbold
 function changeBold(){
-    var isBold = canvas.getActiveObject().get("fontWeight") == "bold";
-    canvas.getActiveObject().set("fontWeight", isBold ? "normal" : "bold");
-    canvas.renderAll();
+    var isBold = activecanvas.getActiveObject().get("fontWeight") == "bold";
+    activecanvas.getActiveObject().set("fontWeight", isBold ? "normal" : "bold");
+    activecanvas.renderAll();
 }
 
 // function to change text to italic and unitalic
 function changeItalic(){
-    var isItalic = canvas.getActiveObject().get("fontStyle") == "italic";
-    canvas.getActiveObject().set("fontStyle", isItalic ? "normal" : "italic");
-    canvas.renderAll();
+    var isItalic = activecanvas.getActiveObject().get("fontStyle") == "italic";
+    activecanvas.getActiveObject().set("fontStyle", isItalic ? "normal" : "italic");
+    activecanvas.renderAll();
 }
 // change changeUnderline
 function changeUnderline(){
-    var isUnderline = canvas.getActiveObject().get("underline") == "underline";
-    canvas.getActiveObject().set("underline", isUnderline ? "" : "underline");
-    canvas.renderAll();
+    var isUnderline = activecanvas.getActiveObject().get("underline") == "underline";
+    activecanvas.getActiveObject().set("underline", isUnderline ? "" : "underline");
+    activecanvas.renderAll();
 }
 
+
+//add image function by src
+function addImage(imageURL){
+    fabric.Image.fromURL(imageURL, function (img) {
+        img.scaleToHeight(150);
+        img.scaleToWidth(150);
+        activecanvas.add(img);
+    });
+}
 
 
 
 // COPY , cut , paste functions 
 function copy(){
-    canvas.getActiveObject().clone(function(cloned) {
+    activecanvas.getActiveObject().clone(function(cloned) {
         _clipboard = cloned;
     });
 }
 
 function cut() {
-    var activeObject = canvas.getActiveObject();
+    var activeObject = activecanvas.getActiveObject();
     if (activeObject) {
         activeObject.clone(function(cloned) {
             _clipboard = cloned;
         });
-        canvas.remove(activeObject);
-        canvas.discardActiveObject();
-        canvas.renderAll();
+        activecanvas.remove(activeObject);
+        activecanvas.discardActiveObject();
+        activecanvas.renderAll();
     }
 }
 
 function paste(){
     _clipboard.clone(function(clonedObj) {
-        canvas.discardActiveObject();
+        activecanvas.discardActiveObject();
         clonedObj.set({
             left: clonedObj.left + 10,
             top: clonedObj.top + 10,
             evented: true,
         });
         if (clonedObj.type === 'activeSelection') {
-            clonedObj.canvas = canvas;
+            clonedObj.canvas = activecanvas;
             clonedObj.forEachObject(function(obj) {
-                canvas.add(obj);
+                activecanvas.add(obj);
             });
             clonedObj.setCoords();
         } else {
-            canvas.add(clonedObj);
+            activecanvas.add(clonedObj);
         }
         _clipboard.top += 10;
         _clipboard.left += 10;
-        canvas.setActiveObject(clonedObj);
-        canvas.requestRenderAll();
+        activecanvas.setActiveObject(clonedObj);
+        activecanvas.requestRenderAll();
     });
 }
 
 
+//brind forward
+function bringForward() {
+    var activeObject = activecanvas.getActiveObject();
+    console.log(activeObject);
+    if (activeObject) {
+        
+        activecanvas.bringForward(activeObject);
+    }
+}
+
+//send backward
+function sendBackwards() {
+    var activeObject = activecanvas.getActiveObject();
+    if (activeObject) {
+        activecanvas.sendBackwards(activeObject);
+    }
+}
 
 
-
-
-
-// Update the TShirt color according to the selected color by the user
-document.getElementById("tshirt-design").addEventListener("change", function(){
-    updateTshirtImage(this.value);
+// copy , paste , cut shortcut
+document.addEventListener("keydown", function(e) {
+    var keyCode = e.keyCode;
+    if (e.ctrlKey && keyCode === 67) {
+        copy();
+    } else if (e.ctrlKey && keyCode === 86) {
+        paste();
+    } else if (e.ctrlKey && keyCode === 88) {
+        cut();
+    }
 }, false);
+
+
+
+
+
 
 // When the user clicks on upload a custom picture
 document.getElementById('tshirt-custompicture').addEventListener("change", function(e){
@@ -200,9 +261,9 @@ document.getElementById('tshirt-custompicture').addEventListener("change", funct
 
             img.scaleToHeight(300);
             img.scaleToWidth(300); 
-            canvas.centerObject(img);
-            canvas.add(img);
-            canvas.renderAll();
+            activecanvas.centerObject(img);
+            activecanvas.add(img);
+            activecanvas.renderAll();
         };
     };
 
@@ -219,7 +280,7 @@ document.addEventListener("keydown", function(e) {
 
     if(keyCode == 46){
         console.log("Removing selected element on Fabric.js on DELETE key !");
-        canvas.remove(canvas.getActiveObject());
+        activecanvas.remove(activecanvas.getActiveObject());
     }
 }, false);
 
