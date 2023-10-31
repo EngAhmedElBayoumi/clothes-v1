@@ -2228,13 +2228,8 @@
 
     <script>
 function addNewItem() {
-  // Get the table body element
   var tableBody = document.getElementById("table-body");
-
-  // Create a new table row
   var newRow = document.createElement("tr");
-
-  // Create the HTML content for the new row
   var rowContent = `
     <td>
       <input type="text" class="form-control" placeholder="00">
@@ -2256,19 +2251,12 @@ function addNewItem() {
       <button onclick="removeRow(this)" class="btn btn-danger" style="color: #fff">Remove</button>
     </td>
   `;
-
-  // Set the HTML content of the new row
   newRow.innerHTML = rowContent;
-
-  // Append the new row to the table body
   tableBody.appendChild(newRow);
 }
         
         function removeRow(button) {
-  // Get the table row (tr) element that contains the clicked button
   var row = button.closest("tr");
-
-  // Remove the row from the table
   row.remove();
 }
         
