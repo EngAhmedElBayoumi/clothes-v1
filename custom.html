@@ -1597,10 +1597,10 @@
                 <div class="formsGroupsInput">
                     
                     <div class="form-group">
-                        <button type="button" style="width: 150px;" class="btoonCalcPrice">Add Team Member</button>
+                        <button type="button" onclick="addNewItem()" style="width: 150px;" class="btoonCalcPrice">Add Team Member</button>
                     </div>
                     <div class="tableTeam">
-                        <table class="table table-bordered">
+                        <table class="table table-bordered" >
                             <thead class="thead-dark">
                                 <tr>
                                     <th style="width: 100px"><p>Num</p></th>
@@ -1609,7 +1609,7 @@
                                     <th style="width: 100px;"><p>Remove</p></th>
                                 </tr>
                             </thead>
-                            <tbody>
+                            <tbody id="table-body">
                                 <tr>
                                     <td>
                                         <input  type="text" id="" class="form-control" placeholder="00">
@@ -1627,7 +1627,7 @@
                                         </select>
                                     </td>
                                     <td>
-                                        <button class="btn btn-danger" style="color: #fff">Remove</button>
+                                        <button onclick="removeRow(this)" class="btn btn-danger" style="color: #fff">Remove</button>
                                     </td>
                                 </tr>
                             </tbody>
@@ -2226,6 +2226,52 @@
         });
     </script>
 
+    <script>
+function addNewItem() {
+  // Get the table body element
+  var tableBody = document.getElementById("table-body");
+
+  // Create a new table row
+  var newRow = document.createElement("tr");
+
+  // Create the HTML content for the new row
+  var rowContent = `
+    <td>
+      <input type="text" class="form-control" placeholder="00">
+    </td>
+    <td>
+      <input type="text" class="form-control" placeholder="Name">
+    </td>
+    <td>
+      <select class="form-control" onchange="">
+        <option value="S">S</option>
+        <option value="M">M</option>
+        <option value="L">L</option>
+        <option value="XL">XL</option>
+        <option value="XXL">XXL</option>
+        <option value="XXXL">XXXL</option>
+      </select>
+    </td>
+    <td>
+      <button onclick="removeRow(this)" class="btn btn-danger" style="color: #fff">Remove</button>
+    </td>
+  `;
+
+  // Set the HTML content of the new row
+  newRow.innerHTML = rowContent;
+
+  // Append the new row to the table body
+  tableBody.appendChild(newRow);
+}
+        
+        function removeRow(button) {
+  // Get the table row (tr) element that contains the clicked button
+  var row = button.closest("tr");
+
+  // Remove the row from the table
+  row.remove();
+}
+</script>
 </body>
 
 
