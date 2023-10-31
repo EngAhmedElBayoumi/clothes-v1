@@ -1538,7 +1538,7 @@
                                                                                     <th><p>Size</p></th>
                                                                                 </tr>
                                                                             </thead>
-                                                                            <tbody>
+                                                                            <tbody id="tablbodyItems">
                                                                                 <tr>
                                                                                     <td><p>10</p></td>
                                                                                     <td><p>Ahmed</p></td>
@@ -1636,7 +1636,7 @@
                     
                     <div class="form-group">
                     
-                        <button style="width: 50%; margin: auto" type="button" class="btoonCalcPrice">Save</button>
+                        <button onclick="saveData()" data-bs-dismiss="modal"  style="width: 50%; margin: auto" type="button" class="btoonCalcPrice">Save</button>
                     </div>
                     
                     
@@ -2271,7 +2271,47 @@ function addNewItem() {
   // Remove the row from the table
   row.remove();
 }
+        
+        
+        
+            function saveData() {
+        
+      var tableBody = document.getElementById("table-body");
+      var rows = tableBody.getElementsByTagName("tr");
+      var data = [];
+      for (var i = 0; i < rows.length; i++) {
+        var row = rows[i];
+        var cells = row.getElementsByTagName("td");
+        var num = cells[0].querySelector("input").value;
+        var name = cells[1].querySelector("input").value;
+        var size = cells[2].querySelector("select").value;
+        var rowData = {
+          num: num,
+          name: name,
+          size: size
+        };
+        data.push(rowData);
+         
+          var tableBody = document.getElementById("tablbodyItems");
+      tableBody.innerHTML = "";
+      for (var i = 0; i < data.length; i++) {
+        var data = data[i];
+        var newRow = document.createElement("tr");
+        var rowContent = `
+          <td><p>${data.num}</p></td>
+          <td><p>${data.name}</p></td>
+          <td><p>${data.size}</p></td>
+        `;
+        newRow.innerHTML = rowContent;
+        tableBody.appendChild(newRow);
+      }
+          
+      var jsonData = JSON.stringify(data);
+      console.log(jsonData);
+      }
+            }
 </script>
+
 </body>
 
 
