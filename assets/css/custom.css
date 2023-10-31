@@ -651,3 +651,52 @@ padding: 13px 10px;
     color: #fff;
     font-size: 15px;
 }
+
+
+
+
+.CustomTapsDesign .AddDesignTap .AddDesignBodyTap .accordion .accordion-item .accordion-body .AcordyBodyInputs{
+        padding: 15px;
+    border: 1px solid #068b8e;
+ 
+}
+
+.CustomTapsDesign .AddDesignTap .AddDesignBodyTap .AcordyBodyInputs .form_group{
+        margin-bottom: 30px;
+}
+.CustomTapsDesign .AddDesignTap .AddDesignBodyTap .AcordyBodyInputs .form_group:last-child{
+    margin-bottom: 0;
+}
+.CustomTapsDesign .AddDesignTap .AddDesignBodyTap .AcordyBodyInputs .form_group label{
+        color: #068b8e;
+    font-size: 15px;
+}
+.CustomTapsDesign .AddDesignTap .AddDesignBodyTap .AcordyBodyInputs .form_group .form-control{
+    border-radius: 0;
+    box-shadow: none;
+    outline: 0;
+}
+.inputcolorr{
+    display: block;
+    width: 100%;
+    border-radius: 0;
+    height: 40px;
+}
+
+
+.tableTeam{
+    margin-top: 15px;
+}
+.tableTeam table{
+    text-align: center;
+}
+.tableTeam table .thead-dark{
+    background: #068b8e;
+    color: #fff;
+    font-weight: 400;
+}
+
+.tableTeam table p{
+    font-weight: 400;
+}
+

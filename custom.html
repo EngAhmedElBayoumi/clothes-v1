@@ -139,7 +139,7 @@
                                         class="main-menu-link">self&nbsp;customization</a></li>
                                 <li class="main-menu-item "><a href="#"
                                         class="main-menu-link">posters&nbsp;and&nbsp;banners</a></li>
-                                <li class="main-menu-item "><a href="#" class="main-menu-link">Call&nbsp;expert</a></li>
+                                <li class="main-menu-item "><a href="#" class="main-menu-link">Call&nbsp;expert</a>
                                 
                                 </li>
                                 <li class="main-menu-item "><a href="#" class="main-menu-link">Ordaring</a></li>
@@ -299,6 +299,16 @@
                                                         >
                                                             <img src="assets/images/NewImages/icons/download.png">
                                                             <span class="d-none d-sm-block">Save/Load</span>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li class="nav-item waves-effect waves-light">
+                                                    <a class="nav-link" data-bs-toggle="tab" href="#Name_Number"
+                                                        role="tab">
+                                                        <div class="forflex"
+                                                        onclick="save()">
+                                                            <img src="assets/images/NewImages/icons/download.png">
+                                                            <span class="d-none d-sm-block">Add Team</span>
                                                         </div>
                                                     </a>
                                                 </li>
@@ -1458,16 +1468,100 @@
                                                             </div>
                                                         </div>
                                                     </div>
+                                                
                                                 </div>
-                                                <div class="tab-pane" id="Quote_Buy" role="tabpanel">
-                                                    <p class="mb-0">
-                                                        Trust fund seitan letterpress, keytar raw denim keffiyeh etsy
-                                                        art party before they sold out master cleanse gluten-free squid
-                                                        scenester freegan cosby sweater. Fanny pack portland seitan DIY,
-                                                        art party locavore wolf cliche high life echo park Austin. Cred
-                                                        vinyl keffiyeh DIY salvia PBR, banh mi before they sold out
-                                                        farm-to-table.
-                                                    </p>
+                                                <div class="tab-pane" id="Name_Number" role="tabpanel">
+                                                    <div class="AddDesignTap">
+                                                        <div class="Title">
+                                                            <h2 class="">Name & Number</h2>
+                                                            <span>Select an option</span>
+                                                        </div>
+                                                        <div class="AddDesignBodyTap">
+                                                           <div class="AcordyBodyInputs">
+                                                               <div class="row justify-content-center" style="">
+                                                                <div class="col-lg-3">
+                                                                    <div class="form_group">
+                                                                        <label>Font Color</label>
+                                                                        <div class="inputElement">
+                                                                        <input class="inputcolorr" type="color" name="" id="" oninput="NumColor(this.value)">
+                                                                    </div>
+                                                                    </div>
+                                                                    
+                                                               </div>
+                                                                   <div class="col-lg-9">
+                                                                       
+                                                                       <div class="form_group">
+                                                                           <label>Font Type</label>
+                                                                        <select class="form-control"
+                                                                        onchange="changeFontFamily(this.value)"
+                                                                        >
+                                                                            <option style="font-family: cursive" value="cursive">cursive
+                                                                            </option>
+                                                                            <option style="font-family:fantasy"  value="fantasy">fantasy
+                                                                            </option>
+                                                                            <option style="font-family:inherit"  value="inherit">inherit
+                                                                            </option>
+                                                                            <option style="font-family:monospace"  value="monospace">
+                                                                                monospace</option>
+                                                                            <option style="font-family:sans-serif"  value="sans-serif">
+                                                                                sans-serif</option>
+                                                                        </select>
+                                                                       </div>
+                                                                       
+                                                                   </div>
+                                                                   <div class="col-lg-3">
+                                                                    <div class="form_group">
+                                                                        <label>Number</label>
+                                                                        <input type="text"
+                                                                            id=""
+                                                                            class="form-control"
+                                                                            placeholder="00">
+                                                                    </div>
+                                                                   </div>
+                                                                   <div class="col-lg-9">
+                                                                    <div class="form_group">
+                                                                        <label>Name</label>
+                                                                        <input type="text"
+                                                                            id=""
+                                                                            class="form-control"
+                                                                            placeholder="Name">
+                                                                    </div>
+                                                                   </div>
+                                                                   
+                                                                   <div class="col-lg-12">
+                                                                    <div class="tableTeam">
+                                                                        <table class="table table-bordered">
+                                                                            <thead class="thead-dark">
+                                                                                <tr>
+                                                                                    <th><p>Num</p></th>
+                                                                                    <th><p>Name</p></th>
+                                                                                    <th><p>Size</p></th>
+                                                                                </tr>
+                                                                            </thead>
+                                                                            <tbody>
+                                                                                <tr>
+                                                                                    <td><p>10</p></td>
+                                                                                    <td><p>Ahmed</p></td>
+                                                                                    <td><p>L</p></td>
+                                                                                </tr>
+                                                                            </tbody>
+                                                                        </table>
+                                                                       </div>
+                                                                   </div>
+                                                                   
+                                                                   <div class="col-lg-8">
+                                                                    <div class="form-group">
+                                                                        <button href="#TeamList" data-bs-toggle="modal"
+                                                                                    class="CollectionPrint">Add List Name & Number
+                                                                                </button>
+                                                                       </div>
+                                                                   </div>
+                                                               </div>
+                                                                
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                
                                                 </div>
                                             </div>
 
@@ -1493,10 +1587,64 @@
 
 
 
-   
 
 
 
+    <div class="modal modalCototn_Type fade" id="TeamList" aria-hidden="true" tabindex="-1">
+        <div class="modal-dialog modal-dialog modal-lg">
+            <div class="modal-content">
+                <button type="button" class="btn-close position-absolute end-0 p-2" data-bs-dismiss="modal" aria-label="Close"></button>
+                <div class="formsGroupsInput">
+                    
+                    <div class="form-group">
+                        <button type="button" style="width: 150px;" class="btoonCalcPrice">Add Team Member</button>
+                    </div>
+                    <div class="tableTeam">
+                        <table class="table table-bordered">
+                            <thead class="thead-dark">
+                                <tr>
+                                    <th style="width: 100px"><p>Num</p></th>
+                                    <th><p>Name</p></th>
+                                    <th><p>Size</p></th>
+                                    <th style="width: 100px;"><p>Remove</p></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <input  type="text" id="" class="form-control" placeholder="00">
+                                    </td>
+                                    <td><input type="text" id="" class="form-control" placeholder="Name"></td>
+                                    <td>
+                                        <select class="form-control" onchange="">
+                                            <option  value="S">S</option>
+                                            <option  value="M">M</option>
+                                            <option  value="L">L</option>
+                                            <option  value="XL">XL</option>
+                                            <option  value="XXL">XXL</option>
+                                            <option  value="XXXL">XXXL</option>
+                                            
+                                        </select>
+                                    </td>
+                                    <td>
+                                        <button class="btn btn-danger" style="color: #fff">Remove</button>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                       </div>
+                    
+                    <div class="form-group">
+                    
+                        <button style="width: 50%; margin: auto" type="button" class="btoonCalcPrice">Save</button>
+                    </div>
+                    
+                    
+                    
+                </div>
+            </div>
+        </div>
+    </div> <!-- Product Modal End -->
 
 
     <div class="modal modalCototn_Type fade" id="coton_Teshert_Type" aria-hidden="true" tabindex="-1">
