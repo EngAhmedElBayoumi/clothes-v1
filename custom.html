@@ -2209,6 +2209,8 @@
             });
         });
     </script>
+    
+    
     <script>
         $(document).ready(function () {
             $('.colorItem').click(function () {
@@ -2217,7 +2219,9 @@
             });
         });
     </script>
-    <script>
+   
+   
+   <script>
         $(document).ready(function () {
             $('.ArtItem').click(function () {
                 $('.ArtItem').removeClass('active'); // Remove active class from all items
@@ -2225,6 +2229,8 @@
             });
         });
     </script>
+
+
 
     <script>
 function addNewItem() {
@@ -2262,42 +2268,41 @@ function addNewItem() {
         
         
         
-            function saveData() {
-        
-      var tableBody = document.getElementById("table-body");
-      var rows = tableBody.getElementsByTagName("tr");
-      var data = [];
-      for (var i = 0; i < rows.length; i++) {
-        var row = rows[i];
-        var cells = row.getElementsByTagName("td");
-        var num = cells[0].querySelector("input").value;
-        var name = cells[1].querySelector("input").value;
-        var size = cells[2].querySelector("select").value;
-        var rowData = {
-          num: num,
-          name: name,
-          size: size
-        };
-        data.push(rowData);
-         
-          var tableBody = document.getElementById("tablbodyItems");
-      tableBody.innerHTML = "";
-      for (var i = 0; i < data.length; i++) {
-        var data = data[i];
-        var newRow = document.createElement("tr");
-        var rowContent = `
-          <td><p>${data.num}</p></td>
-          <td><p>${data.name}</p></td>
-          <td><p>${data.size}</p></td>
-        `;
-        newRow.innerHTML = rowContent;
-        tableBody.appendChild(newRow);
-      }
-          
-      var jsonData = JSON.stringify(data);
-      console.log(jsonData);
-      }
-            }
+function saveData() {
+  var tableBody = document.getElementById("table-body");
+  var rows = tableBody.getElementsByTagName("tr");
+  var data = [];
+  for (var i = 0; i < rows.length; i++) {
+    var row = rows[i];
+    var cells = row.getElementsByTagName("td");
+    var num = cells[0].querySelector("input").value;
+    var name = cells[1].querySelector("input").value;
+    var size = cells[2].querySelector("select").value;
+    var rowData = {
+      num: num,
+      name: name,
+      size: size
+    };
+    data.push(rowData);
+  }
+
+  var tableBodyItems = document.getElementById("tablbodyItems");
+  tableBodyItems.innerHTML = "";
+  for (var i = 0; i < data.length; i++) {
+    var rowData = data[i];
+    var newRow = document.createElement("tr");
+    var rowContent = `
+      <td><p>${rowData.num}</p></td>
+      <td><p>${rowData.name}</p></td>
+      <td><p>${rowData.size}</p></td>
+    `;
+    newRow.innerHTML = rowContent;
+    tableBodyItems.appendChild(newRow);
+  }
+
+  var jsonData = JSON.stringify(data);
+  console.log(jsonData);
+}
 </script>
 
 </body>
